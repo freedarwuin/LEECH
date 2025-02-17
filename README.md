@@ -60,49 +60,49 @@ Java es un lenguaje de programación de uso general que se utiliza para desarrol
 - **Orientado a objetos**: Java es un lenguaje orientado a objetos. Respalda los cuatro pilares de la programación orientada a objetos: encapsulación, abstracción, herencia y polimorfismo.
 - **Multiproceso**: Java está diseñado para ser multiproceso. Admite subprocesos múltiples, lo que permite que varios subprocesos se ejecuten simultáneamente.
 
-#### History of Java
+#### Historia de Java
 
-Java was originally developed by James Gosling at Sun Microsystems in 1991. It was designed to be a simple, portable, and secure programming language for embedded systems. The first version of Java was released in 1995. Since then, Java has become one of the most popular programming languages in the world.
+Java fue desarrollado originalmente por James Gosling en Sun Microsystems en 1991. Fue diseñado para ser un lenguaje de programación simple, portátil y seguro para sistemas integrados. La primera versión de Java se lanzó en 1995. Desde entonces, Java se ha convertido en uno de los lenguajes de programación más populares del mundo.
 
 ---
 
-### 1.2 Setting up the Development Environment
+### 1.2 Configuración del entorno de desarrollo
 
-To start programming in Java, you need to set up your development environment. In this section, we'll guide you through the process of installing the JDK (Java Development Kit) and configuring your IDE (Integrated Development Environment) for a smooth development experience.
+Para comenzar a programar en Java, debe configurar su entorno de desarrollo. En esta sección, lo guiaremos a través del proceso de instalación del JDK (Java Development Kit) y la configuración de su IDE (Integrated Development Environment) para una experiencia de desarrollo fluida.
 
-#### Installing JDK 11 from Adoptium
+#### Instalación de JDK 11 desde Adoptium
 
-To install JDK 11 from Adoptium, follow these steps:
+Para instalar JDK 11 desde Adoptium, siga estos pasos:
 
-1. Visit the [Adoptium website](https://adoptium.net/) and navigate to the downloads page.
-2. Select the appropriate JDK 11 distribution for your operating system.
-3. Download the installer package and run it.
-4. Follow the installation wizard instructions to complete the JDK installation.
+1. Visita el [Sitio web de Adoptium](https://adoptium.net/) y navegar a la página de descargas.
+2. Seleccione la distribución JDK 11 adecuada para su sistema operativo.
+3. Descargue el paquete de instalación y ejecútelo.
+4. Siga las instrucciones del asistente de instalación para completar la instalación del JDK.
 
-#### Configuring Intellij IDEA Community Edition
+#### Configuración de Intellij IDEA Community Edition
 
-Intellij IDEA is a popular IDE for Java development. In this guide, we'll use Intellij IDEA Community Edition. To configure Intellij IDEA for Java development, follow these steps:
+Intellij IDEA es un IDE popular para el desarrollo de Java. En esta guía, utilizaremos Intellij IDEA Community Edition. Para configurar Intellij IDEA para el desarrollo de Java, siga estos pasos:
 
-1. Download and install [Intellij IDEA Community Edition](https://www.jetbrains.com/idea/download/).
-2. Launch Intellij IDEA after the installation is complete.
+1. Descargar e instalar [Edición comunitaria de Intellij IDEA](https://www.jetbrains.com/idea/download/).
+2. Inicie Intellij IDEA una vez completada la instalación.
 
-#### Setting up a New Project in Intellij IDEA
+#### Configuración de un nuevo proyecto en Intellij IDEA
 
-Once you have Intellij IDEA installed, you can set up a new Java project. Here's how:
+Una vez que haya instalado Intellij IDEA, podrá configurar un nuevo proyecto Java. A continuación, le indicamos cómo hacerlo:
 
-1. Open Intellij IDEA and click on "Create New Project" or go to "File" > "New" > "Project".
-2. Select "Java" in the left pane and ensure that JDK 11 is selected as the Project SDK.
-3. Choose the desired project template and click "Next".
-4. Enter the project name and select the project location on your computer.
-5. Click "Finish" to create the project.
+1. Abra Intellij IDEA y haga clic en "Create New Project" o ir a "File" > "New" > "Project".
+2. Seleccione "Java" en el panel izquierdo y asegúrese de que JDK 11 esté seleccionado como SDK del proyecto.
+3. Seleccione la plantilla de proyecto deseada y haga clic en "Next".
+4. Ingrese el nombre del proyecto y seleccione la ubicación del proyecto en su computadora.
+5. Haga clic en "Finish" para crear el proyecto.
 
-#### Understanding build.gradle in both Kotlin (KTS) and Groovy
+#### Comprender build.gradle tanto en Kotlin (KTS) como en Groovy
 
-In Java projects, build.gradle files are commonly used for project configuration and dependency management. There are two syntax options for writing build.gradle files: Kotlin (KTS) and Groovy.
+En los proyectos Java, los archivos build.gradle se utilizan habitualmente para la configuración del proyecto y la gestión de dependencias. Hay dos opciones de sintaxis para escribir archivos build.gradle: Kotlin (KTS) y Groovy.
 
-##### Kotlin (KTS) Syntax
+##### Sintaxis de Kotlin (KTS)
 
-The Kotlin DSL (KTS) provides a more concise and type-safe syntax for build.gradle files. It is recommended for new projects. Here's an example of a build.gradle.kts file:
+El DSL de Kotlin (KTS) proporciona una sintaxis más concisa y segura para los tipos de archivos build.gradle. Se recomienda para proyectos nuevos. A continuación, se muestra un ejemplo de un archivo build.gradle.kts:
 
 ```kotlin
 // build.gradle.kts (Kotlin DSL)
