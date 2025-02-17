@@ -1,64 +1,64 @@
-# Comprehensive Guide to Learning Java and Writing RuneLite Plugins
+# Guía completa para aprender Java y escribir complementos de RuneLite
 
 
 
 ---
 
 
-Welcome to the Comprehensive Guide to Learning Java and Writing RuneLite Plugins! This guide is designed to provide you with a solid foundation in Java programming and help you get started with developing plugins for the RuneLite client. Whether you're a beginner or have some programming experience, this guide will walk you through the essentials and provide you with examples and resources to enhance your learning.
+¡Bienvenido a la Guía completa para aprender Java y escribir complementos de RuneLite! Esta guía está diseñada para brindarte una base sólida en programación Java y ayudarte a comenzar a desarrollar complementos para el cliente RuneLite. Ya seas principiante o tengas algo de experiencia en programación, esta guía te guiará por los aspectos esenciales y te brindará ejemplos y recursos para mejorar tu aprendizaje.
 <br></br>
 
 <a href="https://discord.gg/ehvSsj24cn">
   <img src="https://cdn.discordapp.com/icons/1096562449009872939/5aaf8eb1a5562cbc8eabee2967887a89.webp?size=100" alt="Discord Logo" width="12%" height="12%">
 </a>
 
-[Join The Myre discord server](https://discord.gg/ehvSsj24cn)
+[Únete al servidor de Discord de Myre](https://discord.gg/ehvSsj24cn)
 
 ## Table of Contents
 
-- [Section 1: Java Fundamentals](#section-1-java-fundamentals)
-  - [1.1 Understanding Java](#11-understanding-java)
-  - [1.2 Setting up the Development Environment](#12-setting-up-the-development-environment)
-  - [1.3 Basics of Java Syntax](#13-basics-of-java-syntax)
-  - [1.4 Object-Oriented Programming (OOP)](#14-object-oriented-programming-oop)
-  - [1.5 Exception Handling](#15-exception-handling)
-  - [1.6 Multi Threading](#16-multi-threading)
+- [Sección 1: Fundamentos de Java](#section-1-java-fundamentals)
+  - [1.1 Entendiendo Java](#11-understanding-java)
+  - [1.2 Configuración del entorno de desarrollo](#12-setting-up-the-development-environment)
+  - [1.3 Fundamentos de la sintaxis de Java](#13-basics-of-java-syntax)
+  - [1.4 Programación Orientada a Objetos (POO)](#14-object-oriented-programming-oop)
+  - [1.5 Manejo de excepciones](#15-exception-handling)
+  - [1.6 Subprocesos múltiples](#16-multi-threading)
 
-- [Section 2: RuneLite Plugin Development](#section-2-RuneLite-plugin-development)
-  - [2.1 Introduction to RuneLite](#21-introduction-to-RuneLite)
-  - [2.2 Setting up the Development Environment](#22-setting-up-the-development-environment)
-  - [2.3 Creating Your First RuneLite Plugin](#23-creating-your-first-RuneLite-plugin)
-  - [2.4 Interacting with the RuneScape Game Client](#24-interacting-with-the-runescape-game-client)
-  - [2.5 Advanced Plugin Features](#25-advanced-plugin-features)
+- [Sección 2: Desarrollo del complemento RuneLite](#section-2-RuneLite-plugin-development)
+  - [2.1 Introducción a RuneLite](#21-introduction-to-RuneLite)
+  - [2.2 Configuración del entorno de desarrollo](#22-setting-up-the-development-environment)
+  - [2.3 Creando tu primer plugins RuneLite](#23-creating-your-first-RuneLite-plugin)
+  - [2.4 Interacción con el cliente del juego RuneScape](#24-interacting-with-the-runescape-game-client)
+  - [2.5 Funciones avanzadas del complemento](#25-advanced-plugin-features)
 
-- [Section 3: External Plugin Informative](#section-3-external-plugin-informative)
-  - [3.1 External Plugin Warning](#31-external-plugin-warning)
-  - [3.2 EthanVann Plugin API](#32-ethanvann-plugin-api)
-  - [3.3 Kotori Plugin Loader](#33-kotori-plugin-loader)
-  - [3.4 Game Pack Reflection](#34-game-pack-reflection)
-  - [3.5 Revision updates](#35-revision-updates)
-- [Credits](#credits)
-- [TODO](#todo)
-- [Additonal Resources](#additional-resources)
-- [Contact Info](#contact-info)
+- [Sección 3: Información sobre plugins externos](#section-3-external-plugin-informative)
+  - [3.1 Advertencia sobre complementos externos](#31-external-plugin-warning)
+  - [3.2 API del plugin EthanVann](#32-ethanvann-plugin-api)
+  - [3.3 Cargador de complementos Kotori](#33-kotori-plugin-loader)
+  - [3.4 Reflexión sobre el paquete de juego](#34-game-pack-reflection)
+  - [3.5 Actualizaciones de revisión](#35-revision-updates)
+- [Créditos](#credits)
+- [HACER](#todo)
+- [Recursos adicionales](#additional-resources)
+- [Información de contacto](#contact-info)
 
 ---
 
-## Section 1: Java Fundamentals
+## Sección 1: Fundamentos de Java
 
 ### 1.1 Understanding Java
 
-Java is a widely-used programming language known for its simplicity, portability, and versatility. In this section, you will learn the basics of Java, including its features, history, and advantages as a language.
+Java es un lenguaje de programación muy utilizado, conocido por su simplicidad, portabilidad y versatilidad. En esta sección, aprenderá los conceptos básicos de Java, incluidas sus características, su historia y sus ventajas como lenguaje.
 
-#### Features of Java
+#### Características de Java
 
-Java is a general-purpose programming language that is used to develop a wide range of applications, including desktop, mobile, and web applications. It is a class-based, object-oriented language that is designed to be simple, portable, and secure. Here are some of the key features of Java:
+Java es un lenguaje de programación de uso general que se utiliza para desarrollar una amplia gama de aplicaciones, incluidas aplicaciones de escritorio, móviles y web. Es un lenguaje orientado a objetos y basado en clases que está diseñado para ser simple, portátil y seguro. Estas son algunas de las características clave de Java:
 
-- **Simple**: Java is designed to be simple and easy to learn. It has a concise syntax and a small set of keywords, making it easy to read and write code in Java.
-- **Portable**: Java is designed to be portable across different platforms. It is compiled into bytecode, which can be executed on any platform that has a Java Virtual Machine (JVM).
-- **Secure**: Java is designed to be secure. It has built-in security features such as automatic memory management and type safety.
-- **Object-Oriented**: Java is an object-oriented language. It supports the four pillars of object-oriented programming: encapsulation, abstraction, inheritance, and polymorphism.
-- **Multithreaded**: Java is designed to be multithreaded. It supports multithreading, which allows multiple threads to run concurrently.
+- **Sencillo**: Java está diseñado para ser simple y fácil de aprender. Tiene una sintaxis concisa y un pequeño conjunto de palabras clave, lo que facilita la lectura y escritura de código en Java.
+- **Portátil**: Java está diseñado para ser portable entre distintas plataformas. Se compila en código de bytes, que se puede ejecutar en cualquier plataforma que tenga una máquina virtual Java (JVM).
+- **Seguro**: Java está diseñado para ser seguro. Tiene funciones de seguridad integradas, como administración automática de memoria y seguridad de tipos.
+- **Orientado a objetos**: Java es un lenguaje orientado a objetos. Respalda los cuatro pilares de la programación orientada a objetos: encapsulación, abstracción, herencia y polimorfismo.
+- **Multiproceso**: Java está diseñado para ser multiproceso. Admite subprocesos múltiples, lo que permite que varios subprocesos se ejecuten simultáneamente.
 
 #### History of Java
 
