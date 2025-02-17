@@ -14,7 +14,7 @@
 
 [Únete al servidor de Discord de Myre](https://discord.gg/ehvSsj24cn)
 
-## Table of Contents
+## Tabla de contenido
 
 - [Sección 1: Fundamentos de Java](#section-1-java-fundamentals)
   - [1.1 Entendiendo Java](#11-understanding-java)
