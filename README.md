@@ -46,7 +46,7 @@
 
 ## Sección 1: Fundamentos de Java
 
-### 1.1 Understanding Java
+### 1.1 Entendiendo Java
 
 Java es un lenguaje de programación muy utilizado, conocido por su simplicidad, portabilidad y versatilidad. En esta sección, aprenderá los conceptos básicos de Java, incluidas sus características, su historia y sus ventajas como lenguaje.
 
