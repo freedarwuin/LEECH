@@ -123,9 +123,9 @@ dependencies {
 }
 ```
 
-##### Groovy Syntax
+##### Sintaxis Groovy
 
-The Groovy syntax is the traditional syntax for build.gradle files and is still widely used. Here's an equivalent example of a build.gradle file written in Groovy:
+La sintaxis Groovy es la sintaxis tradicional para los archivos build.gradle y todavía se utiliza ampliamente. A continuación, se muestra un ejemplo equivalente de un archivo build.gradle escrito en Groovy:
 
 ```groovy
 // build.gradle (Groovy DSL)
@@ -146,51 +146,51 @@ dependencies {
 }
 ```
 
-Choose the syntax that you are more comfortable with or that aligns with the existing project structure.
+Elija la sintaxis con la que se sienta más cómodo o que se alinee con la estructura del proyecto existente.
 
 ---
 
-### 1.3 Basics of Java Syntax
+### 1.3 Fundamentos de la sintaxis de Java
 
-In this section, you'll learn the fundamental building blocks of Java programs. We'll cover topics such as variables, data types, operators, conditional statements, and looping constructs. By understanding these concepts, you'll be able to write basic Java programs and manipulate data effectively.
+En esta sección, aprenderá los componentes básicos de los programas Java. Trataremos temas como variables, tipos de datos, operadores, sentencias condicionales y construcciones de bucles. Al comprender estos conceptos, podrá escribir programas Java básicos y manipular datos de manera eficaz.
 
 #### Variables
 
-In Java, variables are used to store data that can be accessed and manipulated throughout the program. They have a specific data type and a name. Here's an example of declaring and initializing a variable:
+En Java, las variables se utilizan para almacenar datos a los que se puede acceder y manipular a lo largo del programa. Tienen un tipo de datos específico y un nombre. A continuación, se muestra un ejemplo de declaración e inicialización de una variable:
 
 ```java
 int age = 25;
 ```
 
-Data Types
-Java has built-in data types to represent different kinds of values. Some common data types include:
+Tipos de datos
+Java tiene tipos de datos integrados para representar distintos tipos de valores. Algunos tipos de datos comunes son:
 
-`int`: for integer values
-`double`: for floating-point values
-`boolean`: for boolean values (true or false)
-`String`: for representing textual data
-`float`: for floating-point values (less precise than double)
-`char`: for single characters
-`long`: for integer values (larger range than int)
-`byte`: for integer values (smaller range than int)
-`short`: for integer values (smaller range than int)
+`int`: para valores enteros
+`double`: para valores de punto flotante
+`boolean`: para valores booleanos (true o false)
+`String`: para representar datos textuales
+`float`: para valores de punto flotante (menos precisos que el doble)
+`char`: para caracteres individuales
+`long`: para valores enteros (rango mayor que int)
+`byte`: para valores enteros (rango más pequeño que int)
+`short`: para valores enteros (rango más pequeño que int)
 
-Here's an example of using different data types:
+A continuación se muestra un ejemplo de uso de diferentes tipos de datos:
 
 ```java
 int age = 25;
 double height = 1.75;
 boolean isStudent = true;
-String name = "John Doe";
+String name = "Juan Pérez";
 ```
 
-#### Operators
-Java provides various operators to perform operations on variables and values. Some common operators include:
+#### Operadores
+Java ofrece varios operadores para realizar operaciones con variables y valores. Algunos operadores comunes son:
 
-Arithmetic operators: + (addition), - (subtraction), * (multiplication), / (division), % (modulo)
-Comparison operators: == (equality), != (inequality), < (less than), > (greater than), <= (less than or equal to), >= (greater than or equal to)
-Logical operators: && (logical AND), || (logical OR), ! (logical NOT)
-Assignment operators: =, +=, -=, *=, /=, %= (compound assignment)
+Operadores aritméticos: + (suma), - (resta), * (multiplicación), / (división), % (módulo)
+Operadores de comparación: == (igualdad), != (desigualdad), < (menor que), > (mayor que), <= (menor o igual que), >= (mayor o igual que)
+Operadores lógicos: && (logical AND), || (logical OR), ! (logical NOT)
+Operadores de asignación: =, +=, -=, *=, /=, %= (asignación compuesta)
 
 ```java
 int a = 5;
@@ -203,21 +203,21 @@ int counter = 0;
 counter += 1; // counter = 1        
 ```
 
-#### Conditional Statements
-Conditional statements allow your program to make decisions and execute different code blocks based on certain conditions. The if statement is a commonly used conditional statement. Here's an example:
+#### Declaraciones condicionales
+Las sentencias condicionales permiten que el programa tome decisiones y ejecute distintos bloques de código en función de determinadas condiciones. La sentencia if es una sentencia condicional de uso común. A continuación, se muestra un ejemplo:
 
 ```java
 int age = 18;
 
         if (age >= 18) {
-        System.out.println("You are an adult.");
+        System.out.println("Eres un adulto.");
         } else {
-        System.out.println("You are a minor.");
+        System.out.println("Eres menor de edad.");
         }
 ```
 
-#### Looping Constructs
-Looping constructs allow you to repeat a block of code multiple times. The for loop is commonly used when you know the number of iterations in advance. Here's an example:
+#### Construcciones de bucle
+Las construcciones de bucle permiten repetir un bloque de código varias veces. El bucle for se utiliza habitualmente cuando se conoce de antemano la cantidad de iteraciones. A continuación, se muestra un ejemplo:
 
 ```java
 for (int i = 0; i < 5; i++) {
@@ -228,17 +228,17 @@ for (int i = 0; i < 5; i++) {
 
 ---
 
-### 1.4 Object-Oriented Programming (OOP)
+### 1.4 Programación Orientada a Objetos (POO)
 
-Java is an object-oriented programming (OOP) language, which means it emphasizes the use of classes and objects to structure programs. In this section, you'll explore the key concepts of OOP, including classes, objects, inheritance, polymorphism, and encapsulation. You'll learn how to create and use classes, define methods, and apply access modifiers to control the visibility of class members.
+Java es un lenguaje de programación orientado a objetos (OOP), lo que significa que enfatiza el uso de clases y objetos para estructurar programas. En esta sección, explorará los conceptos clave de OOP, incluidas las clases, los objetos, la herencia, el polimorfismo y la encapsulación. Aprenderá a crear y usar clases, definir métodos y aplicar modificadores de acceso para controlar la visibilidad de los miembros de la clase.
 
-#### Classes and Objects
+#### Clases y objetos
 
-In Java, a class is a blueprint or template that defines the properties (attributes) and behaviors (methods) of objects. An object is an instance of a class. Here's an example of a simple class and its usage:
+En Java, una clase es un modelo o plantilla que define las propiedades (atributos) y los comportamientos (métodos) de los objetos. Un objeto es una instancia de una clase. A continuación, se muestra un ejemplo de una clase simple y su uso:
 
 ```java
 public class Person {
-  // Attributes
+  // Atributos
   private String name;
   private int age;
 
@@ -248,20 +248,20 @@ public class Person {
     this.age = age;
   }
 
-  // Method
+  // Método
   public void sayHello() {
-    System.out.println("Hello, my name is " + name + " and I'm " + age + " years old.");
+    System.out.println("Hola, mi nombre es " + name + " Y yo soy " + age + " años.");
   }
 }
 
-  // Usage
-  Person person = new Person("John Doe", 25);
+  // Uso
+  Person person = new Person("Juan Pérez", 25);
 person.sayHello();
 ```
 
-#### Methods and Parameters
+#### Métodos y parámetros
 
-Methods are the behaviors of a class. They are used to perform specific actions or calculations. A method can have parameters, which are inputs to the method. Here's an example:
+Los métodos son los comportamientos de una clase. Se utilizan para realizar acciones o cálculos específicos. Un método puede tener parámetros, que son entradas para el método. A continuación, se muestra un ejemplo:
 
 ```java
 public class Calculator {
@@ -273,30 +273,30 @@ public class Calculator {
     if (denominator != 0) {
       return numerator / denominator;
     } else {
-      throw new IllegalArgumentException("Cannot divide by zero.");
+      throw new IllegalArgumentException("No se puede dividir por cero.");
     }
   }
 }
 
-  // Usage
+  // Uso
   Calculator calculator = new Calculator();
   int sum = calculator.add(5, 3);
   double result = calculator.divide(10.0, 2.0);
 
 ```
 
-#### Access Modifiers
+#### Modificadores de acceso
 
-Access modifiers control the visibility and accessibility of class members (variables, methods, constructors) from other parts of the program. Java provides four access modifiers:
+Los modificadores de acceso controlan la visibilidad y accesibilidad de los miembros de la clase (variables, métodos, constructores) desde otras partes del programa. Java ofrece cuatro modificadores de acceso:
 
-- `public`: accessible from anywhere
-- `private`: accessible only within the same class
-- `protected`: accessible within the same class and subclasses
-- default (no explicit modifier): accessible within the same package
+- `public`: accesible desde cualquier lugar
+- `private`: accesible solo dentro de la misma clase
+- `protected`: accesible dentro de la misma clase y subclases
+- default (no explicit modifier): accesible dentro del mismo paquete
 
-#### Inheritance
+#### Herencia
 
-Inheritance is a mechanism in OOP that allows one class to inherit the properties and methods of another class. The class that is inherited from is called the superclass or parent class, and the class that inherits is called the subclass or child class. Here's an example:
+La herencia es un mecanismo de programación orientada a objetos que permite que una clase herede las propiedades y los métodos de otra clase. La clase de la que se hereda se denomina superclase o clase padre, y la clase que hereda se denomina subclase o clase hija. A continuación, se muestra un ejemplo:
 
 ```java
 public class Vehicle {
@@ -324,49 +324,49 @@ public class Car extends Vehicle {
   }
 }
 
-  // Usage
+  // Uso
   Car car = new Car("Toyota", 4);
 car.start();
         car.drive();
 
 ```
 
-#### Polymorphism
+#### Polimorfismo
 
-Polymorphism is the ability of objects of different classes to be treated as objects of a common superclass. It allows you to write code that can work with objects of different types, as long as they are related through inheritance. Here's an example:
+El polimorfismo es la capacidad de los objetos de diferentes clases de ser tratados como objetos de una superclase común. Permite escribir código que pueda funcionar con objetos de diferentes tipos, siempre que estén relacionados a través de la herencia. A continuación, se muestra un ejemplo:
 
 ```java
 public class Shape {
   public void draw() {
-    System.out.println("Drawing a shape.");
+    System.out.println("Dibujar una forma.");
   }
 }
 
 public class Circle extends Shape {
   @Override
   public void draw() {
-    System.out.println("Drawing a circle.");
+    System.out.println("Dibujar un círculo.");
   }
 }
 
 public class Square extends Shape {
   @Override
   public void draw() {
-    System.out.println("Drawing a square.");
+    System.out.println("Dibujar un cuadrado.");
   }
 }
 
-  // Usage
+  // Uso
   Shape shape1 = new Circle();
   Shape shape2 = new Square();
-shape1.draw(); // Output: Drawing a circle.
-        shape2.draw(); // Output: Drawing a square.
+shape1.draw(); // Salida: Dibujar un círculo.
+        shape2.draw(); // Salida: Dibujar un cuadrado.
 
 ```
 
-#### Encapsulation
+#### Encapsulación
 
-Encapsulation is the principle of bundling data (attributes) and methods (behaviors) together within a class and controlling access to them. It helps maintain the integrity and security of the data. Here's an example:
+La encapsulación es el principio de agrupar datos (atributos) y métodos (comportamientos) dentro de una clase y controlar el acceso a ellos. Ayuda a mantener la integridad y la seguridad de los datos. A continuación, se muestra un ejemplo:
 
 ```java
 public class BankAccount {
@@ -393,7 +393,7 @@ public class BankAccount {
   }
 }
 
-  // Usage
+  // USo
   BankAccount account = new BankAccount(1000.0);
   double currentBalance = account.getBalance(); // 1000.0
 account.deposit(500.0);
@@ -404,13 +404,13 @@ account.deposit(500.0);
 
 ---
 
-### 1.5 Exception Handling
+### 1.5 Manejo de excepciones
 
-Errors and exceptions are common in software development. Java provides a robust exception handling mechanism to deal with unexpected situations. In this section, you'll learn how to handle runtime exceptions and errors using try-catch blocks, and you'll also discover how to create custom exceptions to handle specific scenarios.
+Los errores y las excepciones son comunes en el desarrollo de software. Java proporciona un mecanismo de manejo de excepciones sólido para lidiar con situaciones inesperadas. En esta sección, aprenderá a manejar excepciones y errores en tiempo de ejecución mediante bloques try-catch, y también descubrirá cómo crear excepciones personalizadas para manejar situaciones específicas.
 
-#### Try-Catch Blocks
+#### Bloques Try-Catch
 
-In Java, you can handle exceptions using try-catch blocks. The code that may throw an exception is placed in the try block, and the catch block catches and handles the exception if it occurs. Here's an example:
+En Java, se pueden gestionar excepciones mediante bloques try-catch. El código que puede generar una excepción se coloca en el bloque try y el bloque catch captura y gestiona la excepción si se produce. A continuación, se muestra un ejemplo:
 
 ```java
 try {
@@ -421,9 +421,9 @@ try {
         }
 ```
 
-#### Handling Multiple Exceptions
+#### Manejo de múltiples excepciones
 
-You can handle multiple exceptions by using multiple catch blocks. Each catch block can handle a specific type of exception. Here's an example:
+Puede gestionar varias excepciones mediante el uso de varios bloques catch. Cada bloque catch puede gestionar un tipo específico de excepción. A continuación, se muestra un ejemplo:
 
 ```java
 try {
@@ -435,9 +435,9 @@ try {
         }
 ```
 
-#### Finally Block
+#### Finalmente bloquear
 
-The finally block is used to execute code that should always be run, regardless of whether an exception occurs or not. It is commonly used to release resources or perform cleanup operations. Here's an example:
+El bloque finally se utiliza para ejecutar código que siempre debe ejecutarse, independientemente de si se produce una excepción o no. Se utiliza habitualmente para liberar recursos o realizar operaciones de limpieza. A continuación, se muestra un ejemplo:
 
 ```java
 try {
@@ -449,9 +449,9 @@ try {
         }
 ```
 
-#### Custom Exceptions
+#### Excepciones personalizadas
 
-Java allows you to create your own custom exceptions by extending the `Exception` class or one of its subclasses. Custom exceptions can be used to handle specific scenarios in your code. Here's an example:
+Java le permite crear sus propias excepciones personalizadas ampliando la clase `Exception` o una de sus subclases. Las excepciones personalizadas se pueden utilizar para gestionar situaciones específicas en su código. A continuación, se muestra un ejemplo:
 
 ```java
 public class CustomException extends Exception {
@@ -469,9 +469,9 @@ try {
         }
 ```
 
-#### Exception Propagation
+#### Propagación de excepciones
 
-When an exception is thrown, it can be caught and handled by a method higher up in the call stack or propagated to the calling method. By default, checked exceptions must be declared in the method signature using the `throws` keyword if they are not caught and handled. Here's an example:
+Cuando se lanza una excepción, se puede capturar y manejar mediante un método que se encuentra más arriba en la pila de llamadas o se puede propagar al método que realiza la llamada. De manera predeterminada, las excepciones controladas se deben declarar en la firma del método utilizando la palabra clave `throws` si no se capturan ni manejan. A continuación, se muestra un ejemplo:
 
 ```java
 public void method1() throws IOException {
@@ -496,70 +496,70 @@ public void method3() throws IOException {
 
 ---
 
-### 1.6 Multi Threading
+### 1.6 Subprocesos múltiples
 
-Multi-threading is a programming technique that allows a single process to perform multiple tasks concurrently. It is used to improve the performance of applications that perform long-running tasks such as network requests, file I/O, and computations. In this section, you'll learn how to create and manage threads in Java.
+El subprocesamiento múltiple es una técnica de programación que permite que un solo proceso realice varias tareas simultáneamente. Se utiliza para mejorar el rendimiento de las aplicaciones que realizan tareas de larga duración, como solicitudes de red, E/S de archivos y cálculos. En esta sección, aprenderá a crear y administrar subprocesos en Java.
 
-#### Creating Threads
+#### Creando hilos
 
-In Java, you can create threads by extending the `Thread` class or implementing the `Runnable` interface.
+En Java, puedes crear subprocesos extendiendo la clase `Thread` o implementando la interfaz `Runnable`.
 
-##### Extending the `Thread` class:
+##### Extendiendo la clase `Thread`:
 
-Extending the `Thread` class allows you to define a new class that is a subclass of `Thread` and override its `run()` method to define the task the thread will execute. Here's an example:
+Extender la clase `Thread` le permite definir una nueva clase que es una subclase de `Thread` y anular su método `run()` para definir la tarea que ejecutará el hilo. A continuación, se muestra un ejemplo:
 
 ```java
 public class MyThread extends Thread {
   @Override
   public void run() {
-    System.out.println("MyThread running");
+    System.out.println("MyThread en ejecución");
   }
 }
 ```
 
-##### Implementing the `Runnable` interface:
+##### Implementando la interfaz `Runnable`:
 
-Implementing the `Runnable` interface requires you to implement the `run()` method defined in the interface. This approach is useful when you want to separate the task logic from the thread class. Here's an example:
+Para implementar la interfaz `Runnable` es necesario implementar el método `run()` definido en la interfaz. Este enfoque es útil cuando se desea separar la lógica de la tarea de la clase de subproceso. A continuación, se muestra un ejemplo:
 
 ```java
 public class MyRunnable implements Runnable {
   @Override
   public void run() {
-    System.out.println("MyRunnable running");
+    System.out.println("MyRunnable corriendo");
   }
 }
 ```
 
-#### Starting Threads
+#### Comenzando hilos
 
-To start a thread, you need to create an instance of the thread class and call the `start()` method on it. This will execute the `run()` method on the new thread. Here's an example:
+Para iniciar un hilo, debes crear una instancia de la clase de hilo y llamar al método `start()` en ella. Esto ejecutará el método `run()` en el nuevo hilo. A continuación, se muestra un ejemplo:
 
 ```java
 Thread thread1 = new MyThread();
-        thread1.start(); // Output: MyThread running
+        thread1.start(); // Salida: MyThread en ejecución
 
         Thread thread2 = new Thread(new MyRunnable());
-        thread2.start(); // Output: MyRunnable running
+        thread2.start(); // Salida: MyRunnable en ejecución
 ```
 
-#### Thread States
+#### Estados del hilo
 
-A thread can be in one of the following states:
+Un hilo puede estar en uno de los siguientes estados:
 
-- `NEW`: The thread has been created but has not yet started.
-- `RUNNABLE`: The thread is executing or ready to execute.
-- `BLOCKED`: The thread is blocked waiting for a monitor lock.
-- `WAITING`: The thread is waiting indefinitely for another thread to perform a particular action.
-- `TIMED_WAITING`: The thread is waiting for another thread to perform a particular action for a specified amount of time.
-- `TERMINATED`: The thread has exited and is no longer executing.
+- `NEW`: El hilo ha sido creado pero aún no ha comenzado.
+- `RUNNABLE`: El hilo se está ejecutando o está listo para ejecutarse.
+- `BLOCKED`: El hilo está bloqueado esperando un bloqueo del monitor.
+- `WAITING`: El hilo está esperando indefinidamente que otro hilo realice una acción particular.
+- `TIMED_WAITING`: El hilo está esperando que otro hilo realice una acción particular durante un período de tiempo específico.
+- `TERMINATED`: El hilo ha salido y ya no se está ejecutando.
 
-Understanding the different thread states is important for managing and synchronizing threads effectively in your Java programs.
+Comprender los diferentes estados de los subprocesos es importante para administrarlos y sincronizarlos de manera eficaz en sus programas Java.
 
-#### Synchronizing Threads
+#### Sincronización de subprocesos
 
-When multiple threads are accessing shared resources concurrently, it's crucial to synchronize their access to prevent race conditions and ensure data consistency. Java provides the `synchronized` keyword and `Lock` objects to achieve thread synchronization.
+Cuando varios subprocesos acceden a recursos compartidos simultáneamente, es fundamental sincronizar su acceso para evitar condiciones de competencia y garantizar la coherencia de los datos. Java proporciona la palabra clave `synchronized` y los objetos `Lock` para lograr la sincronización de subprocesos.
 
-The `synchronized` keyword can be applied to methods or blocks of code to ensure that only one thread can execute them at a time. Here's an example:
+La palabra clave `synchronized` se puede aplicar a métodos o bloques de código para garantizar que solo un subproceso pueda ejecutarlos a la vez. A continuación, se muestra un ejemplo:
 
 ```java
 public class Counter {
@@ -571,9 +571,9 @@ public class Counter {
 }
 ```
 
-In this example, the `increment()` method is synchronized, which means only one thread can execute it at any given time. This prevents multiple threads from interfering with each other and causing inconsistent results.
+En este ejemplo, el método `increment()` está sincronizado, lo que significa que solo un subproceso puede ejecutarlo en un momento determinado. Esto evita que varios subprocesos interfieran entre sí y provoquen resultados inconsistentes.
 
-Alternatively, you can use `Lock` objects from the `java.util.concurrent.locks` package to achieve more fine-grained control over synchronization. Here's an example:
+Como alternativa, puede utilizar objetos `Lock` del paquete `java.util.concurrent.locks` para lograr un control más preciso sobre la sincronización. A continuación, se muestra un ejemplo:
 
 ```java
 import java.util.concurrent.locks.Lock;
@@ -594,135 +594,122 @@ public class Counter {
 }
 ```
 
-In this example, the `ReentrantLock` class is used to create a lock, and the `lock()` and `unlock()` methods are used to acquire and release the lock, respectively. The `try-finally` block ensures that the lock is always released, even if an exception occurs.
+En este ejemplo, se utiliza la clase `ReentrantLock` para crear un bloqueo, y los métodos `lock()` y `unlock()` se utilizan para adquirir y liberar el bloqueo, respectivamente. El bloque `try-finally` garantiza que el bloqueo siempre se libere, incluso si se produce una excepción.
 
-Synchronizing threads properly is essential to avoid data corruption and ensure the correctness of concurrent Java programs.
+La sincronización adecuada de los subprocesos es esencial para evitar la corrupción de datos y garantizar la corrección de los programas Java simultáneos.
 
-#### Thread Safety
+#### Seguridad de subprocesos
 
-Thread safety refers to the ability of a program or a specific piece of code to perform correctly and produce the expected results when accessed by multiple threads concurrently. Writing thread-safe code is crucial in multi-threaded applications to prevent data corruption and unexpected behavior.
+La seguridad de subprocesos se refiere a la capacidad de un programa o de un fragmento específico de código para funcionar correctamente y producir los resultados esperados cuando varios subprocesos acceden a él simultáneamente. Escribir código seguro para subprocesos es crucial en aplicaciones multiproceso para evitar la corrupción de datos y el comportamiento inesperado.
 
-To achieve thread safety, you can use various synchronization techniques, such as the `synchronized` keyword, locks, atomic classes, and concurrent data structures provided by the Java `java.util.concurrent` package. These techniques help ensure that shared data is accessed and modified safely by multiple threads.
+Para lograr la seguridad de subprocesos, puede utilizar varias técnicas de sincronización, como la palabra clave `synchronized`, bloqueos, clases atómicas y estructuras de datos concurrentes proporcionadas por el paquete `java.util.concurrent` de Java. Estas técnicas ayudan a garantizar que varios subprocesos accedan y modifiquen de forma segura los datos compartidos.
 
-When designing multi-threaded applications, it's important to identify shared resources and critical sections of code that need to be synchronized to maintain thread safety. Applying appropriate synchronization mechanisms will help you avoid race conditions, deadlocks, and other concurrency-related issues.
+Al diseñar aplicaciones multiproceso, es importante identificar los recursos compartidos y las secciones críticas del código que se deben sincronizar para mantener la seguridad de los subprocesos. La aplicación de mecanismos de sincronización adecuados le ayudará a evitar condiciones de carrera, bloqueos y otros problemas relacionados con la concurrencia.
 
-#### Thread Communication
+#### Comunicación entre subprocesos
 
-In multi-threaded applications, threads often need to communicate and coordinate with each other. Java provides several mechanisms for thread communication, including:
+En aplicaciones multiproceso, los subprocesos a menudo necesitan comunicarse y coordinarse entre sí. Java proporciona varios mecanismos para la comunicación entre subprocesos, entre ellos:
 
-- **Wait and Notify**: The `wait()` and `notify()` methods of the `Object` class allow threads to wait for a specific condition and notify other threads when that condition is met.
-- **Blocking Queues**: The `java.util.concurrent` package provides blocking queue implementations like `LinkedBlockingQueue` and `ArrayBlockingQueue`, which enable threads to exchange data safely.
-- **Thread Signaling**: Custom signaling mechanisms can be implemented using shared objects, flags, and synchronization primitives like locks and semaphores.
+- **Esperar y notificar**: Los métodos `wait()` y `notify()` de la clase `Object` permiten que los subprocesos esperen una condición específica y notifiquen a otros subprocesos cuando se cumple esa condición.
+- **Colas de bloqueo**: El paquete `java.util.concurrent` proporciona implementaciones de colas de bloqueo como `LinkedBlockingQueue` y `ArrayBlockingQueue`, que permiten que los subprocesos intercambien datos de forma segura.
+- **Señalización de subprocesos**: se pueden implementar mecanismos de señalización personalizados utilizando objetos compartidos, indicadores y primitivos de sincronización como bloqueos y semáforos.
 
-Understanding and utilizing these mechanisms appropriately is crucial for building robust and efficient multi-threaded applications in Java.
+Comprender y utilizar estos mecanismos de forma adecuada es crucial para crear aplicaciones multiproceso robustas y eficientes en Java.
 
-#### Exception Handling in Threads
+#### Manejo de excepciones en subprocesos
 
-Exception handling in multi-threaded programs requires careful consideration. When an exception is thrown in a thread, it can terminate the thread's execution and potentially affect the stability of the entire application. To handle exceptions in threads effectively, you can use the following approaches:
+El manejo de excepciones en programas multiproceso requiere una consideración cuidadosa. Cuando se lanza una excepción en un subproceso, puede terminar la ejecución del subproceso y afectar potencialmente la estabilidad de toda la aplicación. Para manejar excepciones en subprocesos de manera efectiva, puede utilizar los siguientes enfoques:
 
-- **Catch and Handle Exceptions Locally**: Place the code that may throw exceptions inside a `try-catch` block within the thread's `run()` method to catch and handle exceptions locally. This ensures that exceptions are captured and processed within the thread, preventing it from abruptly terminating.
-- **Logging**: Use logging frameworks like `java.util.logging`, Log4j, or SLF4J to log exceptions and related information. This helps in debugging and troubleshooting multi-threaded applications.
-- **Thread Uncaught Exception Handler**: Set an uncaught exception handler for threads by calling the `setUncaughtExceptionHandler()` method. This allows you to define a global exception handler that will be invoked whenever an uncaught exception occurs in a thread. The handler can log the exception or take appropriate actions to handle it gracefully.
+- **Capturar y manejar excepciones localmente**: coloque el código que puede lanzar excepciones dentro de un bloque `try-catch` dentro del método `run()` del subproceso para capturar y manejar excepciones localmente. Esto garantiza que las excepciones se capturen y procesen dentro del subproceso, lo que evita que finalice abruptamente.
+- **Registro**: utilice marcos de registro como `java.util.logging`, Log4j o SLF4J para registrar excepciones e información relacionada. Esto ayuda a depurar y solucionar problemas en aplicaciones multiproceso.
+- **Manejador de excepciones no detectadas de subprocesos**: establezca un manejador de excepciones no detectadas para subprocesos llamando al método `setUncaughtExceptionHandler()`. Esto le permite definir un manejador de excepciones global que se invocará siempre que se produzca una excepción no detectada en un subproceso. El manejador puede registrar la excepción o tomar las medidas adecuadas para manejarla correctamente.
 
-By implementing proper exception handling strategies, you can ensure that exceptions in threads are caught, logged, and handled appropriately, improving the overall robustness of your Java applications.
+Al implementar estrategias adecuadas de manejo de excepciones, puede asegurarse de que las excepciones en subprocesos se detecten, registren y manejen adecuadamente, mejorando la solidez general de sus aplicaciones Java.
 
-#### Summary
+#### Resumen
 
-In this section, you learned about multi-threading in Java. You discovered how to create threads by extending the `Thread` class or implementing the `Runnable` interface. You also learned about starting threads, thread states, thread synchronization, thread safety, thread communication, and exception handling in threads. Applying these concepts correctly will help you write efficient, reliable, and scalable multi-threaded Java applications.
-
----
-
-# Section 2: RuneLite Plugin Development
-
-## 2.1 Introduction to RuneLite
-
-RuneLite is an open-source game client for Old School RuneScape. It provides a customizable and feature-rich alternative to the official game client. RuneLite offers various plugins that enhance the gameplay experience by adding new features, improving visuals, and providing useful tools for players.
-
-#### What is RuneLite?
-
-RuneLite is built on the principles of community-driven development and open-source collaboration. It aims to provide a highly customizable and lightweight game client for Old School RuneScape. The RuneLite client is designed to be user-friendly, intuitive, and accessible to players of all skill levels.
-
-#### Architecture and How it Works
-
-RuneLite utilizes a modular architecture that allows developers to create plugins for extending and enhancing the functionality of the client. The client is written in Java and leverages the game's official API to interact with the game server. It provides various hooks and events that plugin developers can utilize to access game data, listen to events, and modify the game's behavior.
-
-#### Benefits of Writing RuneLite Plugins
-
-Writing RuneLite plugins offers several benefits for both developers and players:
-
-- **Customizability**: RuneLite plugins allow players to customize their gaming experience by adding or modifying features according to their preferences.
-- **Enhanced Gameplay**: Plugins can provide useful tools, overlays, and visual enhancements that improve gameplay efficiency and overall experience.
-- **Community Contributions**: By developing RuneLite plugins, you can contribute to the vibrant RuneLite community and share your creations with fellow players.
-- **Learning Experience**: Creating RuneLite plugins is a great way to learn Java programming, software development, and game development concepts.
-
-#### Resources
-
-To learn more about RuneLite and get started with plugin development, check out the following resources:
-
-- [RuneLite Official Website](https://RuneLite.net/)
-- [RuneLite GitHub Repository](https://github.com/RuneLite/RuneLite)
-- [RuneLite Example Plugin Repository](https://github.com/RuneLite/example-plugin)
-
-The RuneLite Example Plugin repository provides a helpful starting point for developing your own plugins. It offers code examples and a guide to help you understand the plugin development process.
-
-RuneLite's active community and extensive documentation provide further support and resources for plugin development. Feel free to explore, experiment, and create your own RuneLite plugins to enhance your Old School RuneScape experience!
+En esta sección, aprendió sobre subprocesos múltiples en Java. Descubrió cómo crear subprocesos ampliando la clase `Thread` o implementando la interfaz `Runnable`. También aprendiste sobre el inicio de subprocesos, estados de subprocesos, sincronización de subprocesos, seguridad de subprocesos, comunicación de subprocesos y manejo de excepciones en subprocesos. Aplicar estos conceptos correctamente te ayudará a escribir aplicaciones Java multiproceso eficientes, confiables y escalables.
 
 ---
 
-## 2.2 Setting up the Development Environment
+# Sección 2: Desarrollo de complementos de RuneLite
 
-To develop RuneLite plugins, you need to set up your development environment accordingly. In this section, you'll learn how to download and install RuneLite and configure your IDE to start building your own plugins. We'll cover the necessary libraries, dependencies, and tools.
+## 2.1 Introducción a RuneLite
 
-#### Downloading and Installing RuneLite
+RuneLite es un cliente de juego de código abierto para Old School RuneScape. Proporciona una alternativa personalizable y rica en funciones al cliente de juego oficial. RuneLite ofrece varios complementos que mejoran la experiencia de juego agregando nuevas funciones, mejorando los elementos visuales y brindando herramientas útiles para los jugadores.
 
-To get started with RuneLite plugin development, follow these steps to download and install RuneLite:
+#### ¿Qué es RuneLite?
 
-1. Visit the [RuneLite website](https://RuneLite.net/) and navigate to the downloads page.
-2. Download the RuneLite installer suitable for your operating system.
-3. Run the installer and follow the installation instructions.
+RuneLite se basa en los principios del desarrollo impulsado por la comunidad y la colaboración de código abierto. Su objetivo es proporcionar un cliente de juego altamente personalizable y liviano para Old School RuneScape. El cliente de RuneLite está diseñado para ser fácil de usar, intuitivo y accesible para jugadores de todos los niveles de habilidad.
 
-#### Configuring the IDE
+#### Arquitectura y cómo funciona
 
-Once you have RuneLite installed, you can configure your Integrated Development Environment (IDE) to start building RuneLite plugins. The recommended IDE for RuneLite plugin development is IntelliJ IDEA. Here's how you can set it up:
+RuneLite utiliza una arquitectura modular que permite a los desarrolladores crear complementos para ampliar y mejorar la funcionalidad del cliente. El cliente está escrito en Java y aprovecha
 
-1. Download and install [IntelliJ IDEA Community Edition](https://www.jetbrains.com/idea/download/).
-2. Launch IntelliJ IDEA after the installation is complete.
+- [Sitio web oficial de RuneLite](https://RuneLite.net/)
+- [Repositorio de GitHub de RuneLite](https://github.com/RuneLite/RuneLite)
+- [Repositorio de complementos de ejemplo de RuneLite](https://github.com/RuneLite/example-plugin)
 
-#### Getting the RuneLite Project from Version Control
+El repositorio de complementos de ejemplo de RuneLite ofrece un punto de partida útil para desarrollar sus propios complementos. Ofrece ejemplos de código y una guía para ayudarlo a comprender el proceso de desarrollo de complementos.
 
-To start developing RuneLite plugins, you'll need to obtain the RuneLite project from version control. Follow these steps to get the project:
-
-1. Open IntelliJ IDEA and select "Check out from Version Control" on the welcome screen.
-2. Choose the Git option and enter the RuneLite repository URL: `https://github.com/RuneLite/RuneLite.git`.
-3. Specify the desired directory to clone the project into.
-4. Click "Clone" to initiate the cloning process.
-
-#### Setting Up VM and Program Arguments
-
-To enable specific features and options during RuneLite plugin development, you may need to configure VM and program arguments in IntelliJ IDEA. Here are some commonly used arguments:
-
-- `-ea` (Enable Assertions): Enable assertions in the RuneLite client for debugging purposes.
-- `--developer-mode` (Developer Mode): Enable developer mode, which provides additional debugging tools and features.
-
-To configure these arguments in IntelliJ IDEA, go to "Run" > "Edit Configurations", select the "Client" configuration, and specify the desired arguments in the "VM options" and "Program arguments" fields.
-
-#### Bypassing the Jagex Launcher for Development
-
-During RuneLite plugin development, you may want to bypass the Jagex Launcher to directly launch the RuneLite client. The RuneLite Wiki provides detailed instructions on how to bypass the Jagex Launcher for development purposes. Refer to the [Using Jagex Accounts](https://github.com/RuneLite/RuneLite/wiki/Using-Jagex-Accounts) guide for more information.
-
-Please note that RuneLite plugin development requires knowledge of Java programming and familiarity with the RuneLite plugin system. It is recommended to have a basic understanding of Java and IntelliJ IDEA before diving into plugin development.
+La comunidad activa de RuneLite y la extensa documentación brindan más soporte y recursos para el desarrollo de complementos. ¡Siéntase libre de explorar, experimentar y crear sus propios complementos de RuneLite para mejorar su experiencia con RuneScape de la vieja escuela!
 
 ---
 
-## 2.3 Creating Your First RuneLite Plugin
+## 2.2 Configuración del entorno de desarrollo
 
-In this section, you'll learn how to create a basic RuneLite plugin step by step. By the end, you'll have a solid foundation to build more complex plugins for RuneLite.
+Para desarrollar complementos de RuneLite, debe configurar su entorno de desarrollo en consecuencia. En esta sección, aprenderá a descargar e instalar RuneLite y a configurar su IDE para comenzar a crear sus propios complementos. Cubriremos las bibliotecas, dependencias y herramientas necesarias.
 
-To create a RuneLite plugin, follow these steps:
+#### Descarga e instalación de RuneLite
 
-#### Step 1: Setting up the Plugin Class
+Para comenzar con el desarrollo de complementos de RuneLite, siga estos pasos para descargar e instalar RuneLite:
 
-First, create a new Java class for your plugin. You can put it in a package like `com.plugins`. The class should extend the `Plugin` class provided by RuneLite.
+1. Visita el .[Sitio web de RuneLite](https://RuneLite.net/) y navegar a la página de descargas.
+2. Descargue el instalador de RuneLite adecuado para su sistema operativo.
+3. Ejecute el instalador y siga las instrucciones de instalación.
+
+#### Configuración del IDE
+
+Una vez que haya instalado RuneLite, puede configurar su entorno de desarrollo integrado (IDE) para comenzar a crear complementos de RuneLite. El IDE recomendado para el desarrollo de complementos de RuneLite es IntelliJ IDEA. A continuación, se muestra cómo configurarlo:
+
+1. Descargue e instale [Edición comunitaria de IntelliJ IDEA](https://www.jetbrains.com/idea/download/).
+2. Inicie IntelliJ IDEA una vez finalizada la instalación.
+
+#### Obtener el proyecto RuneLite desde el control de versiones
+
+Para comenzar a desarrollar complementos de RuneLite, deberá obtener el proyecto RuneLite desde el control de versiones. Siga estos pasos para obtener el proyecto:
+
+1. Abra IntelliJ IDEA y seleccione "Obtener desde el control de versiones" en la pantalla de bienvenida.
+2. Elija la opción Git e ingrese la URL del repositorio de RuneLite: `https://github.com/RuneLite/RuneLite.git`.
+3. Especifique el directorio deseado en el que clonar el proyecto.
+4. Haga clic en "Clonar" para iniciar el proceso de clonación.
+
+#### Configuración de argumentos de programa y de máquina virtual
+
+Para habilitar funciones y opciones específicas durante el desarrollo del complemento de RuneLite, es posible que deba configurar argumentos de programa y de máquina virtual en IntelliJ IDEA. A continuación, se muestran algunos argumentos de uso común:
+
+- `-ea` (Habilitar aserciones): habilita las aserciones en el cliente de RuneLite para fines de depuración.
+- `--developer-mode` (Modo de desarrollador): habilita el modo de desarrollador, que proporciona herramientas y funciones de depuración adicionales.
+
+Para configurar estos argumentos en IntelliJ IDEA, vaya a "Ejecutar" > "Editar configuraciones", seleccione la configuración "Cliente" y especifique los argumentos deseados en los campos "Opciones de VM" y "Argumentos del programa".
+
+#### Cómo omitir el lanzador de Jagex para el desarrollo
+
+Durante el desarrollo del complemento de RuneLite, es posible que desee omitir el lanzador de Jagex para iniciar directamente el cliente de RuneLite. La Wiki de RuneLite proporciona instrucciones detalladas sobre cómo omitir el lanzador de Jagex para fines de desarrollo. Consulta la guía [Uso de cuentas de Jagex](https://github.com/RuneLite/RuneLite/wiki/Using-Jagex-Accounts) para obtener más información.
+
+Ten en cuenta que el desarrollo de complementos de RuneLite requiere conocimientos de programación en Java y familiaridad con el sistema de complementos de RuneLite. Se recomienda tener conocimientos básicos de Java e IntelliJ IDEA antes de sumergirse en el desarrollo de complementos.
+
+---
+
+## 2.3 Creación de tu primer complemento de RuneLite
+
+En esta sección, aprenderás a crear un complemento básico de RuneLite paso a paso. Al final, tendrás una base sólida para crear complementos más complejos para RuneLite.
+
+Para crear un complemento de RuneLite, sigue estos pasos:
+
+#### Paso 1: Configuración de la clase de complemento
+
+Primero, crea una nueva clase Java para tu complemento. Puedes ponerla en un paquete como `com.plugins`. La clase debe extender la clase `Plugin` proporcionada por RuneLite.
 
 ```java
 package com.plugins;
@@ -734,9 +721,9 @@ public class ExamplePlugin extends Plugin {
 }
 ```
 
-#### Step 2: Adding Dependencies (Optional)
+#### Paso 2: Agregar dependencias (opcional)
 
-If your plugin requires any additional plugins or external libraries, you can specify them as dependencies using annotations. For example, if your plugin needs the `OtherPlugin` to function, you can add the `@PluginDependency(OtherPlugin.class)` annotation.
+Si su complemento requiere complementos adicionales o bibliotecas externas, puede especificarlos como dependencias mediante anotaciones. Por ejemplo, si su complemento necesita `OtherPlugin` para funcionar, puede agregar la anotación `@PluginDependency(OtherPlugin.class)`.
 
 ```java
 @PluginDependency(OtherPlugin.class)
@@ -745,9 +732,9 @@ public class ExamplePlugin extends Plugin {
 }
 ```
 
-#### Step 3: Injecting Dependencies
+#### Paso 3: Inyección de dependencias
 
-To access RuneLite services and configurations, you can use dependency injection. This allows you to conveniently access important objects and settings. For example, you can inject the `Client`, `KeyManager`, and `ExampleConfig` objects into your plugin using the `@Inject` annotation.
+Para acceder a los servicios y configuraciones de RuneLite, puede utilizar la inyección de dependencias. Esto le permite acceder cómodamente a objetos y configuraciones importantes. Por ejemplo, puede inyectar los objetos `Client`, `KeyManager` y `ExampleConfig` en su complemento utilizando la anotación `@Inject`.
 
 ```java
 import javax.inject.Inject;
@@ -770,9 +757,9 @@ public class ExamplePlugin extends Plugin {
 }
 ```
 
-#### Step 4: Configuring the Plugin
+#### Paso 4: Configuración del complemento
 
-If your plugin requires configuration settings, you can create a method annotated with `@Provides` to retrieve the configuration from the `ConfigManager`. This allows you to access the plugin's configuration easily.
+Si su complemento requiere ajustes de configuración, puede crear un método anotado con `@Provides` para recuperar la configuración desde `ConfigManager`. Esto le permite acceder a la configuración del complemento fácilmente.
 
 ```java
 import javax.inject.Inject;
@@ -793,9 +780,9 @@ public class ExamplePlugin extends Plugin {
 }
 ```
 
-#### Step 5: Implementing Lifecycle Methods
+#### Paso 5: Implementación de métodos de ciclo de vida
 
-Override the `startUp()` and `shutDown()` methods provided by the `Plugin` class. In the `startUp()` method, you can perform initialization tasks for your plugin, such as sending a welcome message to the client's chat or registering event listeners. In the `shutDown()` method, you can perform cleanup tasks or finalize operations, like sending a goodbye message or unregistering event listeners.
+Reemplace los métodos `startUp()` y `shutDown()` proporcionados por la clase `Plugin`. En el método `startUp()`, puede realizar tareas de inicialización para su complemento, como enviar un mensaje de bienvenida al chat del cliente o registrar oyentes de eventos. En el método `shutDown()`, puede realizar tareas de limpieza o finalizar operaciones, como enviar un mensaje de despedida o anular el registro de oyentes de eventos.
 
 ```java
 import net.RuneLite.api.ChatMessageType;
@@ -821,9 +808,9 @@ public class ExamplePlugin extends Plugin {
 }
 ```
 
-#### Step 6: Interacting with the RuneLite Client
+#### Paso 6: Interacción con el cliente de RuneLite
 
-To interact with the RuneLite client, you can add UI elements and register event listeners. For example, you can define a `HotkeyListener` to listen for specific hotkey events. When the hotkey is pressed, the associated method will be executed. You can use the `sendClientMessage()` method to send messages to the client's chat.
+Para interactuar con el cliente de RuneLite, puede agregar elementos de la interfaz de usuario y registrar detectores de eventos. Por ejemplo, puede definir un `HotkeyListener` para escuchar eventos de teclas de acceso rápido específicos. Cuando se presiona la tecla de acceso rápido, se ejecutará el método asociado. Puede usar el método `sendClientMessage()` para enviar mensajes al chat del cliente.
 
 ```java
 import net.RuneLite.client.input.KeyManager;
@@ -837,7 +824,7 @@ public class ExamplePlugin extends Plugin {
   private final HotkeyListener startButton = new HotkeyListener(() -> config.ExampleHotKey()) {
     @Override
     public void hotkeyPressed() {
-      sendClientMessage("Start button pressed!");
+      sendClientMessage("¡Botón de inicio presionado!");
     }
   };
 
@@ -863,9 +850,9 @@ public class ExamplePlugin extends Plugin {
 }
 ```
 
-#### Step 7: Handling Events
+#### Paso 7: Manejo de eventos
 
-You can listen for specific events, such as chat messages, by annotating a method with `@Subscribe`. Inside the event listener method, you can check the event type and perform actions accordingly. For example, if a chat message of type `GAMEMESSAGE` contains the word "test," you can send a response message to the client's chat.
+Puedes escuchar eventos específicos, como mensajes de chat, anotando un método con `@Subscribe`. Dentro del método de escucha de eventos, puedes verificar el tipo de evento y realizar acciones en consecuencia. Por ejemplo, si un mensaje de chat de tipo `GAMEMESSAGE` contiene la palabra "test", puedes enviar un mensaje de respuesta al chat del cliente.
 
 ```java
 import net.RuneLite.api.ChatMessageType;
@@ -890,29 +877,29 @@ public class ExamplePlugin extends Plugin {
 }
 ```
 
-Following these steps will guide you in creating your first RuneLite plugin. It's important to structure your plugin correctly, handle dependencies, and interact with the RuneLite client effectively. With practice and further exploration, you'll be able to develop more advanced and feature-rich plugins for RuneLite.
+Si sigue estos pasos, podrá crear su primer complemento de RuneLite. Es importante estructurar correctamente el complemento, manejar las dependencias e interactuar con el cliente de RuneLite de manera eficaz. Con práctica y más exploración, podrá desarrollar complementos más avanzados y con más funciones para RuneLite.
 
-## 2.4 Interacting with the RuneScape Game Client
+## 2.4 Interacción con el cliente de juego de RuneScape
 
-RuneLite plugins provide extensive capabilities for interacting with the RuneScape game client, allowing you to access game data, listen to events, and modify game behavior. In this section, we'll explore some of the powerful features available to plugin developers.
+Los complementos de RuneLite brindan amplias capacidades para interactuar con el cliente de juego de RuneScape, lo que le permite acceder a los datos del juego, escuchar eventos y modificar el comportamiento del juego. En esta sección, exploraremos algunas de las potentes funciones disponibles para los desarrolladores de complementos.
 
-#### Accessing Game Client Data
+#### Acceso a los datos del cliente de juego
 
-Plugins can access a wide range of game data provided by the RuneLite API. This includes information about the player, game objects, NPCs, the game world, and more. By accessing this data, you can create dynamic and interactive plugins.
+Los complementos pueden acceder a una amplia gama de datos del juego proporcionados por la API de RuneLite. Esto incluye información sobre el jugador, los objetos del juego, los NPC, el mundo del juego y más. Al acceder a estos datos, puede crear complementos dinámicos e interactivos.
 
-For example, you can retrieve the local player's name using the `getClient()` method provided by the `Plugin` class:
+Por ejemplo, puedes recuperar el nombre del jugador local usando el método `getClient()` provisto por la clase `Plugin`:
 
 ```java
 String playerName = client.getLocalPlayer().getName();
 ```
 
-Similarly, you can access other game entities and properties using the appropriate methods and classes provided by the RuneLite API.
+De manera similar, puedes acceder a otras entidades y propiedades del juego usando los métodos y clases apropiados provistos por la API de RuneLite.
 
-#### Listening to Game Events
+#### Escuchar eventos del juego
 
-Plugins can listen to various game events to be notified of changes or specific actions in the game. By subscribing to these events, you can respond accordingly and perform actions based on the game state.
+Los complementos pueden escuchar varios eventos del juego para recibir notificaciones de cambios o acciones específicas en el juego. Al suscribirte a estos eventos, puedes responder en consecuencia y realizar acciones basadas en el estado del juego.
 
-To listen to game events, you need to annotate a method with the `@Subscribe` annotation and specify the event class you want to listen to. Here's an example of listening to the `GameStateChanged` event:
+Para escuchar eventos del juego, necesitas anotar un método con la anotación `@Subscribe` y especificar la clase de evento que quieres escuchar. Aquí hay un ejemplo de cómo escuchar el evento `GameStateChanged`:
 
 ```java
 import net.RuneLite.api.events.GameStateChanged;
@@ -931,25 +918,25 @@ public class ExamplePlugin extends Plugin {
 }
 ```
 
-By implementing event listeners, you can respond to changes in the game state, player actions, and other important events.
+Al implementar detectores de eventos, puede responder a cambios en el estado del juego, acciones del jugador y otros eventos importantes.
 
-#### Modifying Game Behavior with Hooks
+#### Modificación del comportamiento del juego con ganchos
 
-RuneLite exposes various hooks that allow you to modify the behavior of the game client. By using hooks, you can extend the functionality of the game client or customize its behavior to suit your needs.
+RuneLite expone varios ganchos que le permiten modificar el comportamiento del cliente del juego. Al usar ganchos, puede ampliar la funcionalidad del cliente del juego o personalizar su comportamiento para adaptarlo a sus necesidades.
 
-For example, you can modify the game rendering behavior by accessing the `client` object and setting properties or invoking methods provided by the RuneLite API. Here's an example of modifying the game rendering:
+Por ejemplo, puede modificar el comportamiento de renderización del juego accediendo al objeto `client` y configurando propiedades o invocando métodos proporcionados por la API de RuneLite. A continuación, se muestra un ejemplo de modificación de la renderización del juego:
 
 ```java
 client.setDrawDistance(100);
 ```
 
-By utilizing hooks, you can enhance the game client's functionality, create custom visualizations, or implement new features.
+Al utilizar ganchos, puede mejorar la funcionalidad del cliente del juego, crear visualizaciones personalizadas o implementar nuevas funciones.
 
-#### Displaying Overlays
+#### Visualización de superposiciones
 
-Plugins can display overlays on the game client to provide additional information or visual cues. Overlays are typically used to highlight specific game elements, show timers, or present additional information relevant to the player.
+Los complementos pueden mostrar superposiciones en el cliente del juego para proporcionar información adicional o señales visuales. Las superposiciones se utilizan normalmente para resaltar elementos específicos del juego, mostrar temporizadores o presentar información adicional relevante para el jugador.
 
-To create an overlay, you can extend the `Overlay` class provided by the RuneLite API and implement the necessary methods. Here's an example:
+Para crear una superposición, puede ampliar la clase `Overlay` proporcionada por la API de RuneLite e implementar los métodos necesarios. A continuación, se muestra un ejemplo:
 
 ```java
 import net.RuneLite.api.overlay.Overlay;
@@ -966,7 +953,7 @@ public class ExampleOverlay extends Overlay {
 }
 ```
 
-You can then register your overlay using the `OverlayManager` in the plugin's `startUp()` method:
+Luego puedes registrar tu superposición usando `OverlayManager` en el método `startUp()` del complemento:
 
 ```java
 @Override
@@ -975,13 +962,13 @@ public void startUp() {
         }
 ```
 
-By utilizing overlays, you can provide useful visual information to players within the game client.
+Al utilizar superposiciones, puede proporcionar información visual útil a los jugadores dentro del cliente del juego.
 
-#### Responding to User Input
+#### Respuesta a la entrada del usuario
 
-Plugins can respond to user input events, such as mouse clicks or key presses, to provide interactive functionality. By listening to user input events, you can perform actions based on player interactions.
+Los complementos pueden responder a los eventos de entrada del usuario, como clics del mouse o pulsaciones de teclas, para proporcionar una funcionalidad interactiva. Al escuchar los eventos de entrada del usuario, puede realizar acciones basadas en las interacciones del jugador.
 
-To listen to user input events, you can implement the `MouseListener` or `KeyListener` interfaces provided by the RuneLite API. Here's an example of implementing a mouse click listener:
+Para escuchar los eventos de entrada del usuario, puede implementar las interfaces `MouseListener` o `KeyListener` proporcionadas por la API de RuneLite. A continuación, se muestra un ejemplo de implementación de un detector de clics del mouse:
 
 ```java
 import net.RuneLite.client.input.MouseListener;
@@ -992,7 +979,7 @@ public class ExamplePlugin extends Plugin implements MouseListener {
 
   @Override
   public MouseEvent mouseClicked(MouseEvent event) {
-    // Handle the mouse click event
+    // Manejar el evento de clic del mouse
   }
 
   // ...
@@ -1008,20 +995,19 @@ public void startUp() {
         }
 ```
 
-By responding to user input events, you can create interactive plugins that allow players to interact with your plugin's features.
-
+Al responder a los eventos de entrada del usuario, puedes crear complementos interactivos que permitan a los jugadores interactuar con las funciones de tu complemento.
 
 ---
 
-## 2.5 Advanced Plugin Features
+## 2.5 Funciones avanzadas de los complementos
 
-Once you have a solid understanding of the basics, you can explore more advanced features and techniques to take your RuneLite plugin development to the next level. In this section, we'll dive into more advanced concepts and provide guidance on utilizing them effectively.
+Una vez que comprendas bien los conceptos básicos, puedes explorar funciones y técnicas más avanzadas para llevar el desarrollo de tu complemento de RuneLite al siguiente nivel. En esta sección, profundizaremos en conceptos más avanzados y brindaremos orientación sobre cómo utilizarlos de manera efectiva.
 
-#### Creating Custom Overlays
+#### Creación de superposiciones personalizadas
 
-Custom overlays allow you to add visual elements to the game client, providing additional information or enhancing the user interface. RuneLite offers a comprehensive set of APIs for creating overlays with various styles and behaviors.
+Las superposiciones personalizadas te permiten agregar elementos visuales al cliente del juego, lo que brinda información adicional o mejora la interfaz de usuario. RuneLite ofrece un conjunto completo de API para crear superposiciones con varios estilos y comportamientos.
 
-To create a custom overlay, you can extend the `Overlay` class provided by the RuneLite API and implement the necessary rendering logic. Here's an example:
+Para crear una superposición personalizada, puedes extender la clase `Overlay` proporcionada por la API de RuneLite e implementar la lógica de renderizado necesaria. Aquí tienes un ejemplo:
 
 ```java
 import net.RuneLite.api.overlay.Overlay;
@@ -1036,22 +1022,22 @@ public class CustomOverlay extends Overlay {
 
   @Override
   public Dimension render(Graphics2D graphics) {
-    // Perform custom rendering logic here
+    // Realice aquí una lógica de representación personalizada
     graphics.setColor(OVERLAY_COLOR);
     graphics.fillRect(50, 50, 100, 100);
 
-    return null; // Return null to indicate that the overlay should be rendered continuously
+    return null; // Devuelve nulo para indicar que la superposición debe representarse de forma continua
   }
 }
 ```
 
-You can configure the overlay's layer and position using annotations such as `@OverlayLayer` and `@OverlayPosition`. By registering your custom overlay with the `OverlayManager`, it will be rendered on top of the game client.
+Puede configurar la capa y la posición de la superposición mediante anotaciones como `@OverlayLayer` y `@OverlayPosition`. Al registrar su superposición personalizada con `OverlayManager`, se representará sobre el cliente del juego.
 
-#### Handling Mouse and Keyboard Input
+#### Manejo de la entrada del mouse y del teclado
 
-Advanced plugins often require interaction with mouse and keyboard events to provide dynamic and responsive functionality. RuneLite offers robust input handling capabilities that allow you to listen for and respond to user input events.
+Los complementos avanzados a menudo requieren interacción con eventos del mouse y del teclado para brindar una funcionalidad dinámica y responsiva. RuneLite ofrece sólidas capacidades de manejo de entrada que le permiten escuchar y responder a los eventos de entrada del usuario.
 
-To handle mouse events, you can implement the `MouseListener` interface provided by the RuneLite API. Here's an example:
+Para manejar eventos del mouse, puede implementar la interfaz `MouseListener` proporcionada por la API de RuneLite. A continuación, se incluye un ejemplo:
 
 ```java
 import net.RuneLite.client.input.MouseAdapter;
@@ -1061,17 +1047,17 @@ public class ExamplePlugin extends Plugin {
   private final MouseAdapter mouseAdapter = new MouseAdapter() {
     @Override
     public MouseEvent mousePressed(MouseEvent event) {
-      // Handle mouse press event
+      // Manejar evento de pulsación del ratón
       return event;
     }
 
     @Override
     public MouseEvent mouseReleased(MouseEvent event) {
-      // Handle mouse release event
+      // Manejar el evento de liberación del mouse
       return event;
     }
 
-    // Override other mouse event methods as needed
+    // Anule otros métodos de eventos del mouse según sea necesario
   };
 
   @Override
@@ -1086,7 +1072,7 @@ public class ExamplePlugin extends Plugin {
 }
 ```
 
-Similarly, you can handle keyboard events by implementing the `KeyListener` interface and registering it with the `KeyManager`. This allows you to respond to key presses and releases:
+De manera similar, puedes manejar eventos del teclado implementando la interfaz `KeyListener` y registrándola con `KeyManager`. Esto te permite responder a las pulsaciones y liberaciones de teclas:
 
 ```java
 import net.RuneLite.client.input.KeyListener;
@@ -1096,17 +1082,17 @@ public class ExamplePlugin extends Plugin {
   private final KeyListener keyListener = new KeyListener() {
     @Override
     public void keyTyped(KeyEvent event) {
-      // Handle key typed event
+      // Manejar evento de escritura de tecla
     }
 
     @Override
     public void keyPressed(KeyEvent event) {
-      // Handle key press event
+      // Manejar evento de pulsación de tecla
     }
 
     @Override
     public void keyReleased(KeyEvent event) {
-      // Handle key release event
+      // Manejar evento de liberación de clave
     }
   };
 
@@ -1122,15 +1108,15 @@ public class ExamplePlugin extends Plugin {
 }
 ```
 
-By leveraging mouse and keyboard input handling, you can create plugins that respond to user actions in real-time.
+Al aprovechar el manejo de la entrada del mouse y el teclado, puede crear complementos que respondan a las acciones del usuario en tiempo real.
 
-#### Using External APIs and Libraries
+#### Uso de API y bibliotecas externas
 
-RuneLite plugins can utilize external APIs and libraries to expand their capabilities and integrate with external systems. This allows you to leverage existing tools and services to enhance your plugins.
+Los complementos de RuneLite pueden utilizar API y bibliotecas externas para expandir sus capacidades e integrarse con sistemas externos. Esto le permite aprovechar las herramientas y los servicios existentes para mejorar sus complementos.
 
-To use an external API or library, you need to include the necessary dependencies in your plugin's build configuration. This can be done using build tools such as Maven or Gradle. Once the dependencies are added, you can import and utilize the API or library in your plugin code.
+Para usar una API o biblioteca externa, debe incluir las dependencias necesarias en la configuración de compilación de su complemento. Esto se puede hacer usando herramientas de compilación como Maven o Gradle. Una vez que se agregan las dependencias, puede importar y utilizar la API o la biblioteca en el código de su complemento.
 
-For example, if you want to use the Apache HttpClient library to make HTTP requests, you can include the following Maven dependency:
+Por ejemplo, si desea utilizar la biblioteca Apache HttpClient para realizar solicitudes HTTP, puede incluir la siguiente dependencia de Maven:
 
 ```xml
 <dependencies>
@@ -1142,7 +1128,7 @@ For example, if you want to use the Apache HttpClient library to make HTTP reque
 </dependencies>
 ```
 
-Then, you can import and use the HttpClient in your plugin code:
+Luego, puedes importar y usar HttpClient en el código de tu complemento:
 
 ```java
 import org.apache.http.client.HttpClient;
@@ -1155,13 +1141,13 @@ public class ExamplePlugin extends Plugin {
 }
 ```
 
-By utilizing external APIs and libraries, you can extend the capabilities of your plugins and integrate with external systems seamlessly.
+Al utilizar bibliotecas y API externas, puede ampliar las capacidades de sus complementos e integrarlos con sistemas externos sin problemas.
 
-#### Managing Plugin Configurations and Settings
+#### Gestión de configuraciones y ajustes de complementos
 
-Plugins often require configuration settings that can be customized by users. RuneLite provides a built-in configuration framework that allows you to easily manage and store plugin configurations.
+Los complementos suelen requerir ajustes de configuración que los usuarios pueden personalizar. RuneLite ofrece un marco de configuración integrado que le permite administrar y almacenar fácilmente las configuraciones de los complementos.
 
-To create a configuration for your plugin, you can define a configuration class and annotate it with `@ConfigGroup` and `@ConfigItem` annotations. Here's an example:
+Para crear una configuración para su complemento, puede definir una clase de configuración y anotarla con las anotaciones `@ConfigGroup` y `@ConfigItem`. A continuación, se incluye un ejemplo:
 
 ```java
 import net.RuneLite.client.config.Config;
@@ -1172,8 +1158,8 @@ import net.RuneLite.client.config.ConfigItem;
 public interface ExampleConfig extends Config {
   @ConfigItem(
           keyName = "optionEnabled",
-          name = "Enable Option",
-          description = "Enable a specific option",
+          name = "Habilitar opción",
+          description = "Habilitar una opción específica",
           position = 0
   )
   default boolean optionEnabled() {
@@ -1182,7 +1168,7 @@ public interface ExampleConfig extends Config {
 }
 ```
 
-By using the `ConfigManager`, you can access and modify the plugin's configuration settings within your plugin code:
+Al utilizar `ConfigManager`, puede acceder y modificar la configuración del complemento dentro del código del complemento:
 
 ```java
 import javax.inject.Inject;
@@ -1199,7 +1185,7 @@ public class ExamplePlugin extends Plugin {
   @Override
   public void startUp() {
     boolean optionEnabled = config.optionEnabled();
-    // Use the configuration setting
+    // Utilice la configuración
   }
 
   public void setOptionEnabled(boolean enabled) {
@@ -1208,44 +1194,44 @@ public class ExamplePlugin extends Plugin {
 }
 ```
 
-By leveraging the built-in configuration framework, you can provide a customizable experience for your plugin users.
+Al aprovechar el marco de configuración integrado, puede proporcionar una experiencia personalizable para los usuarios de su complemento.
 
-#### Optimizing Plugin Performance
+#### Optimización del rendimiento del complemento
 
-As your plugins become more complex, it's essential to optimize their performance to ensure smooth gameplay and efficient resource utilization. Here are some tips for optimizing your plugins:
+A medida que sus complementos se vuelven más complejos, es esencial optimizar su rendimiento para garantizar una jugabilidad fluida y un uso eficiente de los recursos. A continuación, se ofrecen algunos consejos para optimizar sus complementos:
 
-- Minimize the use of CPU-intensive operations within event listeners.
-- Avoid frequent polling or unnecessary data updates.
-- Dispose of resources properly to prevent memory leaks.
-- Optimize rendering and limit the number of overlays drawn simultaneously.
-- Use caching and efficient algorithms where applicable.
-- Use multithreading and asynchronous operations to offload heavy tasks.
-- Profile your plugins to identify potential bottlenecks and areas for improvement.
+- Minimizar el uso de operaciones que consumen mucha CPU en los escuchas de eventos.
+- Evitar sondeos frecuentes o actualizaciones de datos innecesarias.
+- Desechar los recursos de forma adecuada para evitar fugas de memoria.
+- Optimizar la representación y limitar la cantidad de superposiciones dibujadas simultáneamente.
+- Utilizar el almacenamiento en caché y algoritmos eficientes cuando corresponda.
+- Utilizar operaciones asincrónicas y de subprocesamiento múltiple para descargar tareas pesadas.
+- Crear perfiles de sus complementos para identificar posibles cuellos de botella y áreas de mejora.
 
-By following these optimization techniques, you can create high-performance plugins that provide a seamless and responsive experience for users.
-
----
-
-# Section 3: External Plugin Informative
-
-## 3.1 External Plugin Warning
-
-Here we will explore the usage of the RuneLite API for some not so good things. This may include loading in plugins not meant to be usable through RuneLite's Plugin Hub or Plugins that were removed by Gagex request.
-
-#### Educational Purposes Only
-
-This section is for educational purposes only. We do not condone the usage of these plugins in any way. We are simply showcasing the capabilities of the RuneLite API and how it can be used to create plugins that are not meant to be used through the Plugin Hub. Please use at your own risk.
+Al seguir estas técnicas de optimización, puede crear complementos de alto rendimiento que proporcionen una experiencia fluida y receptiva para los usuarios.
 
 ---
 
-## 3.2 EthanVann Plugin API
+# Sección 3: Información sobre complementos externos
 
-EthanVann has made significant contributions to the plugin repository we are creating, showcasing his skills as a RuneLite plugin developer. In this chapter, we'll explore EthanVann's contributions, focusing on his API and the impact it has had on the plugin development community.
+## 3.1 Advertencia sobre complementos externos
 
-## EthanVannAPI usage in SuperGlassMakerPlugin
+Aquí exploraremos el uso de la API de RuneLite para algunas cosas no tan buenas. Esto puede incluir la carga de complementos que no están destinados a usarse a través del Centro de complementos de RuneLite o complementos que se eliminaron a pedido de Gagex.
 
-### Package Dependencies
-The following packages are imported by the SuperGlassMakerPlugin:
+#### Solo con fines educativos
+
+Esta sección es solo con fines educativos. No aprobamos el uso de estos complementos de ninguna manera. Simplemente estamos mostrando las capacidades de la API de RuneLite y cómo se puede usar para crear complementos que no están destinados a usarse a través del Centro de complementos. Úselo bajo su propio riesgo.
+
+---
+
+## 3.2 API de complementos de EthanVann
+
+EthanVann ha realizado contribuciones significativas al repositorio de complementos que estamos creando, mostrando sus habilidades como desarrollador de complementos de RuneLite. En este capítulo, exploraremos las contribuciones de EthanVann, centrándonos en su API y el impacto que ha tenido en la comunidad de desarrollo de complementos.
+
+## Uso de EthanVannAPI en SuperGlassMakerPlugin
+
+### Dependencias de paquetes
+SuperGlassMakerPlugin importa los siguientes paquetes:
 
 ```java
 import com.plugins.Collections.*;
@@ -1255,12 +1241,12 @@ import com.google.inject.Provides;
 import lombok.SneakyThrows;
 ```
 
-### Class Definitions
-The `SuperGlassMakerPlugin` class extends the `Plugin` class and is decorated with various annotations that define certain properties of the plugin.
+### Definiciones de clases
+La clase `SuperGlassMakerPlugin` extiende la clase `Plugin` y está decorada con varias anotaciones que definen ciertas propiedades del complemento.
 
 ```java
 @PluginDescriptor(
-        name = "Super Glass Maker",
+        name = "Super fabricante de vidrio",
         description = "",
         enabledByDefault = false,
         tags = {"ethan"}
@@ -1271,14 +1257,14 @@ The `SuperGlassMakerPlugin` class extends the `Plugin` class and is decorated wi
 public class SuperGlassMakerPlugin extends Plugin {
 ```
 
-- `@PluginDescriptor`: Provides basic information about the plugin, such as its name, a short description, its default enabled state, and related tags.
+- `@PluginDescriptor`: proporciona información básica sobre el complemento, como su nombre, una breve descripción, su estado habilitado predeterminado y las etiquetas relacionadas.
 
-- `@Slf4j`: This Lombok annotation allows the class to utilize an instance of a logger.
+- `@Slf4j`: esta anotación de Lombok permite que la clase utilice una instancia de un registrador.
 
-- `@PluginDependency`: This plugin requires the `PacketUtilsPlugin` and `EthanApiPlugin` to function effectively, hence the dependency.
+- `@PluginDependency`: este complemento requiere `PacketUtilsPlugin` y `EthanApiPlugin` para funcionar de manera efectiva, de ahí la dependencia.
 
-### Class-level Variables
-The following fields are declared at the class level:
+### Variables a nivel de clase
+Los siguientes campos se declaran a nivel de clase:
 
 ```java
 public int timeout = 0;
@@ -1295,27 +1281,27 @@ SuperGlassMakerPluginConfig config;
 int timesFailed = 0;
 ```
 
-### Plugin Methods
-- `startUp()`: This method is automatically called when the plugin is enabled by the user. Currently, it sets the timeout to 0.
+### Métodos del complemento
+- `startUp()`: este método se llama automáticamente cuando el usuario habilita el complemento. Actualmente, establece el tiempo de espera en 0.
 
-- `shutDown()`: This method is automatically called when the plugin is disabled. Currently, it doesn't have any specific implementation.
+- `shutDown()`: este método se llama automáticamente cuando el complemento está deshabilitado. Actualmente, no tiene ninguna implementación específica.
 
-- `getConfig(ConfigManager configManager)`: This method returns the configuration settings for this plugin.
+- `getConfig(ConfigManager configManager)`: este método devuelve los ajustes de configuración para este complemento.
 
-- `onGameTick(GameTick event)`: This method is automatically called at every game tick. It contains the main functionality of the plugin, interacting with NPCs, the bank, and glass items in the game.
+- `onGameTick(GameTick event)`: este método se llama automáticamente en cada tick del juego. Contiene la funcionalidad principal del complemento, interactuando con los NPC, el banco y los elementos de vidrio en el juego.
 
-- `handleSecondary()`: This function is responsible for handling secondary tasks in the game. Without more context, the specific implementation is unknown.
+- `handleSecondary()`: esta función es responsable de manejar tareas secundarias en el juego. Sin más contexto, se desconoce la implementación específica.
 
-### Game Interactions
-The `onGameTick(GameTick event)` method handles various game interactions, such as item picking, NPC interactions, and bank transactions. The usage of WidgetPackets and MousePackets suggests operations related to UI and mouse movements.
+### Interacciones del juego
+El método `onGameTick(GameTick event)` maneja varias interacciones del juego, como la selección de elementos, las interacciones con los NPC y las transacciones bancarias. El uso de WidgetPackets y MousePackets sugiere operaciones relacionadas con la interfaz de usuario y los movimientos del mouse.
 
-Please note that this plugin appears to be designed for a specific game, as it references game-specific items like `Secondary.GIANT_SEAWEED` and `SuperGlassMakerPluginConfig`. To use this plugin with a different game, you may need to replace these items with game-specific equivalents.
+Tenga en cuenta que este complemento parece estar diseñado para un juego específico, ya que hace referencia a elementos específicos del juego como `Secondary.GIANT_SEAWEED` y `SuperGlassMakerPluginConfig`. Para usar este complemento con un juego diferente, es posible que deba reemplazar estos elementos con equivalentes específicos del juego.
 
-### Logging
-Throughout the plugin, there are several logging statements used to trace operations and aid in debugging in case of errors or exceptions.
+### Registro
+En todo el complemento, hay varias declaraciones de registro que se utilizan para rastrear operaciones y ayudar en la depuración en caso de errores o excepciones.
 
-### Game Tick Event Subscription
-The plugin subscribes to the game tick event. Each game tick triggers the execution of the `onGameTick` method.
+### Suscripción al evento de tick del juego
+El complemento se suscribe al evento de tick del juego. Cada tick del juego activa la ejecución del método `onGameTick`.
 
 ```java
 @Subscribe
@@ -1324,16 +1310,16 @@ public void onGameTick(GameTick event) throws NoSuchFieldException, ClassNotFoun
 }
 ```
 
-### Bank or Banker Interaction
-If no bank widget is active, the plugin searches for a banker NPC or a bank tile object (both having an action named "Bank") nearest to the player. It interacts with the first it finds to open the bank interface.
+### Interacción con el banco o el banquero
+Si no hay ningún widget de banco activo, el complemento busca un PNJ banquero o un objeto de ficha de banco (ambos con una acción denominada "Banco") más cercano al jugador. Interactúa con el primero que encuentra para abrir la interfaz del banco.
 
 ```java
 Optional<NPC> banker = NPCs.search().withAction("Bank").nearestToPlayer();
 Optional<TileObject> bank = TileObjects.search().withAction("Bank").nearestToPlayer();
 ```
 
-### Item Checks
-The plugin checks for specific items in the bank necessary for Super Glass Making: Bucket of Sand, Molten Glass, Astral Rune, and a secondary item. It also checks for the required spell widget. If any of these are not found, a corresponding message is sent to the game chat.
+### Verificación de objetos
+El complemento verifica si hay objetos específicos en el banco necesarios para la creación de supervidrio: Balde de arena, Vidrio fundido, Runa astral y un objeto secundario. También verifica si hay el widget de hechizo necesario. Si no se encuentra alguno de estos, se envía un mensaje correspondiente al chat del juego.
 
 ```java
 Optional<Widget> sand = Bank.search().withId(ItemID.BUCKET_OF_SAND).first();
@@ -1343,8 +1329,8 @@ Optional<Widget> secondary = Bank.search().withId(config.secondary().getId()).fi
 Widget make_glass = client.getWidget(14286966);
 ```
 
-### Failure Handling
-If any item check fails, this increases a fail counter. If the fail counter exceeds 2, the plugin is stopped.
+### Manejo de errores
+Si falla alguna verificación de elemento, se incrementa el contador de errores. Si el contador de errores supera 2, el complemento se detiene.
 
 ```java
 timesFailed++;
@@ -1354,15 +1340,15 @@ if (timesFailed > 2) {
 }
 ```
 
-### Item Withdrawal
-If all necessary items are found, the plugin begins withdrawing these items in precise amounts from the bank.
+### Retiro de artículos
+Si se encuentran todos los artículos necesarios, el complemento comienza a retirarlos del banco en cantidades precisas.
 
 ```java
 BankInteraction.withdrawX(sand.get(), config.secondary().getSandAmount());
 ```
 
-### Secondary Item Handling
-An additional method, `handleSecondary()`, takes care of dealing with different types of the secondary element. If anything goes wrong in this function, it returns false which signals the main routine to stop the plugin.
+### Manejo de elementos secundarios
+Un método adicional, `handleSecondary()`, se encarga de manejar diferentes tipos de elementos secundarios. Si algo sale mal en esta función, devuelve falso, lo que indica a la rutina principal que detenga el complemento.
 
 ```java
 Optional<Widget> secondary = Bank.search().withId(config.secondary().getId()).first();
@@ -1385,23 +1371,23 @@ BankInteraction.withdrawX(secondary.get(), config.secondary().getSandAmount());
 return true;
 ```
 
-### Casting the Spell
-Finally, if all steps are successful, the plugin casts the Super Glass Making spell via a click packet and queueWidgetAction.
+### Lanzamiento del hechizo
+Finalmente, si todos los pasos son exitosos, el complemento lanza el hechizo Super Glass Making a través de un paquete de clics y queueWidgetAction.
 
 ```java
 MousePackets.queueClickPacket();
 WidgetPackets.queueWidgetAction(make_glass, "Cast");
 ```
-<sup> There is an easier way to do this my creating a Magic Handling class, we can cover later - Cago </sup>
+<sup> Hay una forma más fácil de hacer esto: crear una clase de Manejo Mágico, podemos cubrir la carta - Cago </sup>
 
-### Timeout
-After performing an operation, a timeout of 3 ticks is set to prevent immediate re-triggering of the method.
+### Tiempo de espera
+Después de realizar una operación, se establece un tiempo de espera de 3 tics para evitar que el método se vuelva a activar de inmediato.
 
 ```java
 timeout = 3;
 ```
 
-This timeout is afterwards used somewhere in the beginning of onGameTick like this:
+Este tiempo de espera se utiliza posteriormente en algún lugar al comienzo de onGameTick de la siguiente manera:
 
 ```java
 if (timeout > 0){
@@ -1411,32 +1397,32 @@ if (timeout > 0){
 ```
 <sup> 
 
-In progress
+En proceso
 
-For the complete code, please refer to the following link: [SuperGlassMakerPlugin](https://github.com/Ethan-Vann/EthanVannPlugins/tree/master/src/main/java/com/example/superglass) 
+Para ver el código completo, consulte el siguiente enlace: [SuperGlassMakerPlugin](https://github.com/Ethan-Vann/EthanVannPlugins/tree/master/src/main/java/com/example/superglass) 
 
 </sup>
 
 ---
 
-## 3.3 Kotori Plugin Loader
+## 3.3 Cargador de complementos Kotori
 
 <sup> 
 
-In progress
+En curso
 
 </sup>
 
 
 ---
 
-## 3.4 Game Pack Reflection
+## 3.4 Reflexión sobre el paquete de juego
 
-><i>" Mixin files in RuneLite serve as connections to the game client, allowing developers to access specific methods and data. These files are kept private and obfuscated, meaning their inner workings are hidden. When RuneLite is initialized, these mixin files are loaded to inject or retrieve game information in a logical way.
-<br><br>To understand mixins, let's consider a couple of examples. Imagine we want to get data about the currently selected spell widget in the game. In this case, we use a hook to directly access the needed information from the game client. On the other hand, if we need to determine the animation ID of a character, we may require additional information from different fields. This is where a mixin comes in, helping us access those specific fields to calculate the animation ID correctly.
-<br><br>Finding the obfuscated method names in the patched RuneLite client involves a simple process. For instance, if we're looking for the obfuscated name of the method "getAnimationID," we can obtain an instance of the relevant class, like an Actor. By calling a method on that instance and logging the result, we can identify the obfuscated name we're looking for.
-<br><br>Typically, obfuscated method names have an extra parameter compared to their original unobfuscated versions. This additional parameter is usually a throwaway value, such as an integer. By observing the number of parameters and checking for any additional ones, we can identify the obfuscated method.
-<br><br>Mixin files and hooks enable developers to enhance the functionality of the RuneLite client. They allow access to specific game information and support more complex operations. In cases where RuneLite doesn't provide built-in hooks for certain gamepack methods, developers can utilize mixins and hooks to interact with them and achieve their desired goals. This flexibility empowers developers to customize and improve the RuneLite client to suit their needs.
+><i>" Los archivos mixin en RuneLite sirven como conexiones al cliente del juego, lo que permite a los desarrolladores acceder a métodos y datos específicos. Estos archivos se mantienen privados y ofuscados, lo que significa que su funcionamiento interno está oculto. Cuando se inicializa RuneLite, estos archivos mixin se cargan para inyectar o recuperar información del juego de forma lógica.
+<br><br>Para entender los mixins, consideremos un par de ejemplos. Imaginemos que queremos obtener datos sobre el widget de hechizo seleccionado actualmente en el juego. En este caso, usamos un gancho para acceder directamente a la información necesaria desde el cliente del juego. Por otro lado, si necesitamos determinar el ID de animación de un personaje, es posible que necesitemos información adicional de diferentes campos. Aquí es donde entra en juego un mixin, que nos ayuda a acceder a esos campos específicos para calcular el ID de animación correctamente.
+<br><br>Encontrar los nombres de los métodos ofuscados en el cliente parcheado de RuneLite implica un proceso simple. Por ejemplo, si buscamos el nombre ofuscado del método "getAnimationID", podemos obtener una instancia de la clase relevante, como un Actor. Al llamar a un método en esa instancia y registrar el resultado, podemos identificar el nombre ofuscado que buscamos.
+<br><br>Normalmente, los nombres de métodos ofuscados tienen un parámetro adicional en comparación con sus versiones originales no ofuscadas. Este parámetro adicional suele ser un valor descartable, como un entero. Al observar la cantidad de parámetros y verificar si hay alguno adicional, podemos identificar el método ofuscado.
+<br><br>Los archivos Mixin y los ganchos permiten a los desarrolladores mejorar la funcionalidad del cliente RuneLite. Permiten el acceso a información específica del juego y admiten operaciones más complejas. En los casos en los que RuneLite no proporciona ganchos integrados para ciertos métodos del paquete de juegos, los desarrolladores pueden utilizar mixins y ganchos para interactuar con ellos y lograr sus objetivos deseados. Esta flexibilidad permite a los desarrolladores personalizar y mejorar el cliente RuneLite para que se ajuste a sus necesidades.
 >"</i>
 >
 > -- <cite>[SkylerMiner](#SkylerMiner) 7/18/2023</cite>
