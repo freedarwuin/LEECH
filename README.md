@@ -1428,30 +1428,28 @@ En curso
 > -- <cite>[SkylerMiner](#SkylerMiner) 7/18/2023</cite>
 
 <sup>
-In Progress
+En curso
 </sup>
 
 ---
 
-## 3.5 Revision updates
-This Section will cover the basic differences between the two types of revisions updates most commonly seen in the runelite plugin development market. This helps understand what is going on and possible could help you start being able to help update the revisions in the future.
+## 3.5 Actualizaciones de revisión
+Esta sección cubrirá las diferencias básicas entre los dos tipos de actualizaciones de revisión que se ven más comúnmente en el mercado de desarrollo de complementos de Runelite. Esto ayuda a comprender qué está sucediendo y posiblemente podría ayudarlo a comenzar a poder ayudar a actualizar las revisiones en el futuro.
 
-### What is a Rev update?
-A rev update stands for a "Revision update". When this happens either Runelite has pushed a mixin update changing their obfuscation. Or Jagex has updated the base gamepack which changes almost every obfuscated method name we are trying to acces.
+### ¿Qué es una actualización de revisión?
+Una actualización de revisión significa una "actualización de revisión". Cuando esto sucede, Runelite ha enviado una actualización de mixin que cambia su ofuscación. O Jagex ha actualizado el paquete de juego base que cambia casi todos los nombres de métodos ofuscados a los que intentamos acceder.
 
-### Sub-Rev Updates
-Sub-rev updates are what happens when runelite pushes an update. This is when they update their mixins. This is a term that is a "In-between" layer of the injection process that lets runelite inject specific bytcode into the original gamepack. This lets them add hooks into the gamepack as well as realsy grabbing methods and fields making them into a more useful method call. This means any of their specific methods you need to reflect will need to change. Such as, iff you can see that runelite has recently update you can be sure to have some issues with plugin development if your repo relies on any reflected runelite API methods. Such methods include things such as getAnimation() on the actor class, and getPath() of Npcs/Players. These rely on the base RuneLite mixins so you'll have to grab the newest obfuscated names when this type of update occurs
+### Actualizaciones de sub-revisión
+Las actualizaciones de sub-revisión son lo que sucede cuando Runelite envía una actualización. Esto es cuando actualizan sus mixins. Este es un término que es una capa "intermedia" del proceso de inyección que permite a Runelite inyectar un bytcode específico en el paquete de juego original. Esto les permite agregar ganchos al paquete de juego, así como métodos y campos de captura reales que los convierten en una llamada de método más útil. Esto significa que cualquiera de sus métodos específicos que necesite reflejar tendrá que cambiar. Por ejemplo, si puede ver que Runelite se actualizó recientemente, puede estar seguro de tener algunos problemas con el desarrollo de complementos si su repositorio depende de algún método API de Runelite reflejado. Dichos métodos incluyen cosas como getAnimation() en la clase de actor y getPath() de Npcs/Players. Estos dependen de los mixins base de RuneLite, por lo que tendrá que obtener los nombres ofuscados más nuevos cuando ocurra este tipo de actualización.
 
-In Ethan API based repos one of the reflected methods is integral to the creation of packets usually causing any of these repos to break where as some other repos that only use invokes my be unnafected on a sub-rev update day
+En los repositorios basados ​​en API de Ethan, uno de los métodos reflejados es fundamental para la creación de paquetes, lo que generalmente hace que cualquiera de estos repositorios se rompa, mientras que otros repositorios que solo usan invocaciones pueden no verse afectados en un día de actualización de sub-revisión.
 
+### Actualización de la revisión de Gamepack
+Las actualizaciones de Gamepack son donde Java vuelve a ofuscar todo su código de cliente cuando lanza una nueva versión. Por lo general, ocurren en cualquier momento entre 1 mes y 3 meses entre cada revisión importante. Cuando esto sucede, tenemos que desofuscar el paquete de juegos y mapearlo con un mapeo previo del último paquete de juegos. Esto nos arroja archivos mapeados que son más legibles para humanos y nos permite obtener fácilmente los métodos/campos que queremos, pero esta salida se usa directamente en la actualización de cualquier repositorio OPRS como Storm, Squire y Devious. Mientras que otros repositorios usan una combinación de esta salida y otras entradas para mapear el nombre de clase/campos/métodos que necesitan.
 
+El nivel de dificultad aquí es realmente comprender qué está sucediendo para empezar y las personas que no entienden cómo se refleja el paquete de juegos para cambiar los métodos del cliente pueden tener dificultades para intentar esto. Además, la dificultad depende del tipo de cliente para el que sea la actualización de rev.
 
-### Gamepack Rev Update
-Gamepack updates are where java re-obfuscates all of their client code when releasing a new version. These usually occur anywhere from 1month->3months between each major revision. When this happens we have to de-obfuscated the gamepack and map it with a previous mapping of the last gamepack. This spits us out mapped files that are more human readable and lets us both easily grab methods/fields we want but this output is either directly used in the updating any OPRS repos such as Storm, Squire, and Devious. Whereas other repos use a combination of this output and other inputs to map the classname/fields/methods they need. 
-
-The level of difficulty here is really understanding what is happening to begin with and people who don't understand how the gamepack is reflected into to change client methods might have difficulty attempting this. As well difficulty is dependant on what type of client the rev update is for. 
-
-If the update is for an strictly invoke based client with no additional reflection updates an be done in around 10-30minutes. OpenOSRS based clients have a decent amount of classfiles that just need to be turned into proper java and ensure the mixins they have are still working properly. Packet clients usually have to ensure all parts of the packet + packetfieldnames + buffernodes + packetwrite functions are all working correctly.
+Si la actualización es para un cliente estrictamente basado en invocación sin actualizaciones de reflexión adicionales, se puede realizar en alrededor de 10 a 30 minutos. Los clientes basados ​​en OpenOSRS tienen una cantidad decente de archivos de clase que solo necesitan convertirse en Java adecuado y garantizar que los mixins que tienen sigan funcionando correctamente. Los clientes de paquetes generalmente tienen que asegurarse de que todas las partes del paquete + nombres de campos de paquete + nodos de búfer + funciones de escritura de paquete funcionen correctamente.
 
 <sub>
 in progress
@@ -1462,13 +1460,13 @@ in progress
 
 # TODO:
 
-- [ ] Extend Section 3
-- [ ] More Examples
-- [ ] Resources
+- [ ] Ampliar la Sección 3
+- [ ] Más ejemplos
+- [ ] Recursos
 
 ---
 
-# Credits
+# Créditos
 #### [EthanVann](https://github.com/Ethan-Vann)
 
 #### [Kotori](https://github.com/OreoCupcakes)
@@ -1479,11 +1477,11 @@ in progress
 
 ---
 
-## Additional Resources
+## Recursos adicionales
 
-For additional resources, references, and ongoing community support, check out the following:
+Para obtener recursos adicionales, referencias y soporte continuo de la comunidad, consulte lo siguiente:
 
-### Repos of Interest 
+### Repositorios de interés
 
 - EthanVann Forks
     - [PiggyPlugins](https://github.com/0Hutch/PiggyPlugins)
@@ -1494,23 +1492,23 @@ For additional resources, references, and ongoing community support, check out t
 
 <br>
 
-<sup> Want to add to the List? Submit a PR or DM me on Discord! </sup>
+<sup> ¿Quieres añadir a la lista? ¡Envíame un mensaje privado o envíame un mensaje directo en Discord! </sup>
 
 ---
 
-## Contact Info
+## Información de contacto
 
-- Discord: .zalc (User ID: 242837834120036353)
-- Discord: cagomyre (User ID: 1072925304982614138)
-- Discord: bilbomyre (User ID: 693075521051033602)
+- Discord: .zalc (ID de usuario: 242837834120036353)
+- Discord: cagomyre (ID de usuario: 1072925304982614138)
+- Discord: bilbomyre (ID de usuario: 693075521051033602)
 
-I only have these 2 discord I will never PM you from another. <br> If you get a PM from someone claiming to be me, it is not me.
+Solo tengo estos dos Discord. Nunca te enviaré un mensaje privado desde otro. <br> Si recibes un mensaje privado de alguien que dice ser yo, no soy yo.
 
-Same goes for Bilbo's discord.
+Lo mismo ocurre con el Discord de Bilbo.
 
 ---
 
-Want to give a thanks?
+¿Quieres dar las gracias?
 <br>
 <br>
 [![coinbase](https://img.shields.io/badge/Donate-Coinbase-blue.svg)](https://commerce.coinbase.com/checkout/57579fb4-002e-4a2a-a4a3-a1cf523c2dfd)
